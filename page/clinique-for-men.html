@@ -1,0 +1,5390 @@
+<style>
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* line 24, ../cl-sass/_cl-reset.scss */
+body {
+    line-height: 1;
+}
+
+/* line 28, ../cl-sass/_cl-reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* line 33, ../cl-sass/_cl-reset.scss */
+nav ul {
+    list-style: none;
+}
+
+/* line 37, ../cl-sass/_cl-reset.scss */
+blockquote, q {
+    quotes: none;
+}
+
+/* line 41, ../cl-sass/_cl-reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* line 47, ../cl-sass/_cl-reset.scss */
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+/* line 56, ../cl-sass/_cl-reset.scss */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 63, ../cl-sass/_cl-reset.scss */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* line 70, ../cl-sass/_cl-reset.scss */
+del {
+    text-decoration: line-through;
+}
+
+/* line 74, ../cl-sass/_cl-reset.scss */
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/* line 79, ../cl-sass/_cl-reset.scss */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* line 86, ../cl-sass/_cl-reset.scss */
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* line 91, ../cl-sass/_cl-reset.scss */
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* line 96, ../cl-sass/_cl-reset.scss */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* line 105, ../cl-sass/_cl-reset.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/* line 114, ../cl-sass/_cl-reset.scss */
+input, select {
+    vertical-align: middle;
+}
+
+/* line 118, ../cl-sass/_cl-reset.scss */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* line 124, ../cl-sass/_cl-reset.scss */
+textarea {
+    resize: vertical;
+}
+
+/* line 128, ../cl-sass/_cl-reset.scss */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* line 135, ../cl-sass/_cl-reset.scss */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* line 140, ../cl-sass/_cl-reset.scss */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* line 151, ../cl-sass/_cl-reset.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* line 161, ../cl-sass/_cl-reset.scss */
+.invisible {
+    visibility: hidden;
+}
+
+/* line 165, ../cl-sass/_cl-reset.scss */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+/* line 171, ../cl-sass/_cl-reset.scss */
+.clearfix:after {
+    clear: both;
+}
+
+/* line 175, ../cl-sass/_cl-reset.scss */
+.clearfix {
+    *zoom: 1;
+}
+
+/*  PRINT STYLES */
+@media print {
+    /* line 182, ../cl-sass/_cl-reset.scss */
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    /* line 191, ../cl-sass/_cl-reset.scss */
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    /* line 196, ../cl-sass/_cl-reset.scss */
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    /* line 200, ../cl-sass/_cl-reset.scss */
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /* line 204, ../cl-sass/_cl-reset.scss */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    /* line 209, ../cl-sass/_cl-reset.scss */
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /* line 215, ../cl-sass/_cl-reset.scss */
+    thead {
+        display: table-header-group;
+    }
+
+    /* line 219, ../cl-sass/_cl-reset.scss */
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    /* line 224, ../cl-sass/_cl-reset.scss */
+    img {
+        max-width: 100% !important;
+    }
+
+    /* line 228, ../cl-sass/_cl-reset.scss */
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* line 235, ../cl-sass/_cl-reset.scss */
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../cl-sass/_cl-normalize.scss */
+html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../cl-sass/_cl-normalize.scss */
+body {
+    margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../cl-sass/_cl-normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../cl-sass/_cl-normalize.scss */
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../cl-sass/_cl-normalize.scss */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../cl-sass/_cl-normalize.scss */
+[hidden],
+template {
+    display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../cl-sass/_cl-normalize.scss */
+a {
+    background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, ../cl-sass/_cl-normalize.scss */
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, ../cl-sass/_cl-normalize.scss */
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, ../cl-sass/_cl-normalize.scss */
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, ../cl-sass/_cl-normalize.scss */
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, ../cl-sass/_cl-normalize.scss */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, ../cl-sass/_cl-normalize.scss */
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, ../cl-sass/_cl-normalize.scss */
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, ../cl-sass/_cl-normalize.scss */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+/* line 169, ../cl-sass/_cl-normalize.scss */
+sup {
+    top: -0.5em;
+}
+
+/* line 173, ../cl-sass/_cl-normalize.scss */
+sub {
+    bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, ../cl-sass/_cl-normalize.scss */
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, ../cl-sass/_cl-normalize.scss */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, ../cl-sass/_cl-normalize.scss */
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, ../cl-sass/_cl-normalize.scss */
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, ../cl-sass/_cl-normalize.scss */
+pre {
+    overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, ../cl-sass/_cl-normalize.scss */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, ../cl-sass/_cl-normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+    margin: 0;
+    /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, ../cl-sass/_cl-normalize.scss */
+button {
+    overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, ../cl-sass/_cl-normalize.scss */
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, ../cl-sass/_cl-normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, ../cl-sass/_cl-normalize.scss */
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, ../cl-sass/_cl-normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, ../cl-sass/_cl-normalize.scss */
+input {
+    line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, ../cl-sass/_cl-normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, ../cl-sass/_cl-normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, ../cl-sass/_cl-normalize.scss */
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, ../cl-sass/_cl-normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, ../cl-sass/_cl-normalize.scss */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, ../cl-sass/_cl-normalize.scss */
+legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, ../cl-sass/_cl-normalize.scss */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, ../cl-sass/_cl-normalize.scss */
+optgroup {
+    font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, ../cl-sass/_cl-normalize.scss */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* line 424, ../cl-sass/_cl-normalize.scss */
+td,
+th {
+    padding: 0;
+}
+
+/*  CLINIQUE FONTS */
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url("../cl-fonts/CenturyGothic-Bold.eot");
+    src: url("../cl-fonts/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../cl-fonts/CenturyGothic-Bold.woff") format("woff"), url("../cl-fonts/CenturyGothic-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url("../cl-fonts/CenturyGothic.eot");
+    src: url("../cl-fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../cl-fonts/CenturyGothic.woff") format("woff"), url("../cl-fonts/CenturyGothic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT-Roman';
+    src: url("../cl-fonts/HelveticaNeueLT-Roman.eot");
+    src: url("../cl-fonts/HelveticaNeueLT-Roman.eot?#iefix") format("embedded-opentype"), url("../cl-fonts/HelveticaNeueLT-Roman.woff") format("woff"), url("../cl-fonts/HelveticaNeueLT-Roman.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaLTStd';
+    src: url("../cl-fonts/HelveticaLTStd-Bold.eot");
+    src: url("../cl-fonts/HelveticaLTStd-Bold.eot?#iefix") format("embedded-opentype"), url("../cl-fonts/HelveticaLTStd-Bold.woff") format("woff"), url("../cl-fonts/HelveticaLTStd-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT-Thin';
+    src: url("../cl-fonts/HelveticaNeueLT-Thin.eot");
+    src: url("../cl-fonts/HelveticaNeueLT-Thin.eot?#iefix") format("embedded-opentype"), url("../cl-fonts/HelveticaNeueLT-Thin.woff") format("woff"), url("../cl-fonts/HelveticaNeueLT-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaLTStd-Blk';
+    src: url("../cl-fonts/HelveticaLTStd-Blk.eot");
+    src: url("../cl-fonts/HelveticaLTStd-Blk.eot?#iefix") format("embedded-opentype"), url("../cl-fonts/HelveticaLTStd-Blk.woff") format("woff"), url("../cl-fonts/HelveticaLTStd-Blk.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*  FONT AWESOME FONTS */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("../cl-fonts/fontawesome-webfont.eot?v=4.7.0");
+    src: url("../cl-fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../cl-fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../cl-fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../cl-fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../cl-fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* line 19, ../cl-sass/_cl-fonts.scss */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 28, ../cl-sass/_cl-fonts.scss */
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+/* line 33, ../cl-sass/_cl-fonts.scss */
+.fa-2x {
+    font-size: 2em;
+}
+
+/* line 36, ../cl-sass/_cl-fonts.scss */
+.fa-3x {
+    font-size: 3em;
+}
+
+/* line 39, ../cl-sass/_cl-fonts.scss */
+.fa-4x {
+    font-size: 4em;
+}
+
+/* line 42, ../cl-sass/_cl-fonts.scss */
+.fa-5x {
+    font-size: 5em;
+}
+
+/* line 45, ../cl-sass/_cl-fonts.scss */
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+
+/* line 49, ../cl-sass/_cl-fonts.scss */
+.fa-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+}
+
+/* line 54, ../cl-sass/_cl-fonts.scss */
+.fa-ul > li {
+    position: relative;
+}
+
+/* line 57, ../cl-sass/_cl-fonts.scss */
+.fa-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: 0.14285714em;
+    text-align: center;
+}
+
+/* line 64, ../cl-sass/_cl-fonts.scss */
+.fa-li.fa-lg {
+    left: -1.85714286em;
+}
+
+/* line 67, ../cl-sass/_cl-fonts.scss */
+.fa-border {
+    padding: .2em .25em .15em;
+    border: solid 0.08em #eeeeee;
+    border-radius: .1em;
+}
+
+/* line 72, ../cl-sass/_cl-fonts.scss */
+.fa-pull-left {
+    float: left;
+}
+
+/* line 75, ../cl-sass/_cl-fonts.scss */
+.fa-pull-right {
+    float: right;
+}
+
+/* line 78, ../cl-sass/_cl-fonts.scss */
+.fa.fa-pull-left {
+    margin-right: .3em;
+}
+
+/* line 81, ../cl-sass/_cl-fonts.scss */
+.fa.fa-pull-right {
+    margin-left: .3em;
+}
+
+/* Deprecated as of 4.4.0 */
+/* line 85, ../cl-sass/_cl-fonts.scss */
+.pull-right {
+    float: right;
+}
+
+/* line 88, ../cl-sass/_cl-fonts.scss */
+.pull-left {
+    float: left;
+}
+
+/* line 91, ../cl-sass/_cl-fonts.scss */
+.fa.pull-left {
+    margin-right: .3em;
+}
+
+/* line 94, ../cl-sass/_cl-fonts.scss */
+.fa.pull-right {
+    margin-left: .3em;
+}
+
+/* line 97, ../cl-sass/_cl-fonts.scss */
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+
+/* line 101, ../cl-sass/_cl-fonts.scss */
+.fa-pulse {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+/* line 125, ../cl-sass/_cl-fonts.scss */
+.fa-rotate-90 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* line 131, ../cl-sass/_cl-fonts.scss */
+.fa-rotate-180 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* line 137, ../cl-sass/_cl-fonts.scss */
+.fa-rotate-270 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+/* line 143, ../cl-sass/_cl-fonts.scss */
+.fa-flip-horizontal {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+/* line 149, ../cl-sass/_cl-fonts.scss */
+.fa-flip-vertical {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+/* line 155, ../cl-sass/_cl-fonts.scss */
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+    filter: none;
+}
+
+/* line 162, ../cl-sass/_cl-fonts.scss */
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+/* line 170, ../cl-sass/_cl-fonts.scss */
+.fa-stack-1x,
+.fa-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* line 177, ../cl-sass/_cl-fonts.scss */
+.fa-stack-1x {
+    line-height: inherit;
+}
+
+/* line 180, ../cl-sass/_cl-fonts.scss */
+.fa-stack-2x {
+    font-size: 2em;
+}
+
+/* line 183, ../cl-sass/_cl-fonts.scss */
+.fa-inverse {
+    color: #ffffff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 188, ../cl-sass/_cl-fonts.scss */
+.fa-glass:before {
+    content: "\f000";
+}
+
+/* line 191, ../cl-sass/_cl-fonts.scss */
+.fa-music:before {
+    content: "\f001";
+}
+
+/* line 194, ../cl-sass/_cl-fonts.scss */
+.fa-search:before {
+    content: "\f002";
+}
+
+/* line 197, ../cl-sass/_cl-fonts.scss */
+.fa-envelope-o:before {
+    content: "\f003";
+}
+
+/* line 200, ../cl-sass/_cl-fonts.scss */
+.fa-heart:before {
+    content: "\f004";
+}
+
+/* line 203, ../cl-sass/_cl-fonts.scss */
+.fa-star:before {
+    content: "\f005";
+}
+
+/* line 206, ../cl-sass/_cl-fonts.scss */
+.fa-star-o:before {
+    content: "\f006";
+}
+
+/* line 209, ../cl-sass/_cl-fonts.scss */
+.fa-user:before {
+    content: "\f007";
+}
+
+/* line 212, ../cl-sass/_cl-fonts.scss */
+.fa-film:before {
+    content: "\f008";
+}
+
+/* line 215, ../cl-sass/_cl-fonts.scss */
+.fa-th-large:before {
+    content: "\f009";
+}
+
+/* line 218, ../cl-sass/_cl-fonts.scss */
+.fa-th:before {
+    content: "\f00a";
+}
+
+/* line 221, ../cl-sass/_cl-fonts.scss */
+.fa-th-list:before {
+    content: "\f00b";
+}
+
+/* line 224, ../cl-sass/_cl-fonts.scss */
+.fa-check:before {
+    content: "\f00c";
+}
+
+/* line 227, ../cl-sass/_cl-fonts.scss */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+    content: "\f00d";
+}
+
+/* line 232, ../cl-sass/_cl-fonts.scss */
+.fa-search-plus:before {
+    content: "\f00e";
+}
+
+/* line 235, ../cl-sass/_cl-fonts.scss */
+.fa-search-minus:before {
+    content: "\f010";
+}
+
+/* line 238, ../cl-sass/_cl-fonts.scss */
+.fa-power-off:before {
+    content: "\f011";
+}
+
+/* line 241, ../cl-sass/_cl-fonts.scss */
+.fa-signal:before {
+    content: "\f012";
+}
+
+/* line 244, ../cl-sass/_cl-fonts.scss */
+.fa-gear:before,
+.fa-cog:before {
+    content: "\f013";
+}
+
+/* line 248, ../cl-sass/_cl-fonts.scss */
+.fa-trash-o:before {
+    content: "\f014";
+}
+
+/* line 251, ../cl-sass/_cl-fonts.scss */
+.fa-home:before {
+    content: "\f015";
+}
+
+/* line 254, ../cl-sass/_cl-fonts.scss */
+.fa-file-o:before {
+    content: "\f016";
+}
+
+/* line 257, ../cl-sass/_cl-fonts.scss */
+.fa-clock-o:before {
+    content: "\f017";
+}
+
+/* line 260, ../cl-sass/_cl-fonts.scss */
+.fa-road:before {
+    content: "\f018";
+}
+
+/* line 263, ../cl-sass/_cl-fonts.scss */
+.fa-download:before {
+    content: "\f019";
+}
+
+/* line 266, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-circle-o-down:before {
+    content: "\f01a";
+}
+
+/* line 269, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-circle-o-up:before {
+    content: "\f01b";
+}
+
+/* line 272, ../cl-sass/_cl-fonts.scss */
+.fa-inbox:before {
+    content: "\f01c";
+}
+
+/* line 275, ../cl-sass/_cl-fonts.scss */
+.fa-play-circle-o:before {
+    content: "\f01d";
+}
+
+/* line 278, ../cl-sass/_cl-fonts.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+    content: "\f01e";
+}
+
+/* line 282, ../cl-sass/_cl-fonts.scss */
+.fa-refresh:before {
+    content: "\f021";
+}
+
+/* line 285, ../cl-sass/_cl-fonts.scss */
+.fa-list-alt:before {
+    content: "\f022";
+}
+
+/* line 288, ../cl-sass/_cl-fonts.scss */
+.fa-lock:before {
+    content: "\f023";
+}
+
+/* line 291, ../cl-sass/_cl-fonts.scss */
+.fa-flag:before {
+    content: "\f024";
+}
+
+/* line 294, ../cl-sass/_cl-fonts.scss */
+.fa-headphones:before {
+    content: "\f025";
+}
+
+/* line 297, ../cl-sass/_cl-fonts.scss */
+.fa-volume-off:before {
+    content: "\f026";
+}
+
+/* line 300, ../cl-sass/_cl-fonts.scss */
+.fa-volume-down:before {
+    content: "\f027";
+}
+
+/* line 303, ../cl-sass/_cl-fonts.scss */
+.fa-volume-up:before {
+    content: "\f028";
+}
+
+/* line 306, ../cl-sass/_cl-fonts.scss */
+.fa-qrcode:before {
+    content: "\f029";
+}
+
+/* line 309, ../cl-sass/_cl-fonts.scss */
+.fa-barcode:before {
+    content: "\f02a";
+}
+
+/* line 312, ../cl-sass/_cl-fonts.scss */
+.fa-tag:before {
+    content: "\f02b";
+}
+
+/* line 315, ../cl-sass/_cl-fonts.scss */
+.fa-tags:before {
+    content: "\f02c";
+}
+
+/* line 318, ../cl-sass/_cl-fonts.scss */
+.fa-book:before {
+    content: "\f02d";
+}
+
+/* line 321, ../cl-sass/_cl-fonts.scss */
+.fa-bookmark:before {
+    content: "\f02e";
+}
+
+/* line 324, ../cl-sass/_cl-fonts.scss */
+.fa-print:before {
+    content: "\f02f";
+}
+
+/* line 327, ../cl-sass/_cl-fonts.scss */
+.fa-camera:before {
+    content: "\f030";
+}
+
+/* line 330, ../cl-sass/_cl-fonts.scss */
+.fa-font:before {
+    content: "\f031";
+}
+
+/* line 333, ../cl-sass/_cl-fonts.scss */
+.fa-bold:before {
+    content: "\f032";
+}
+
+/* line 336, ../cl-sass/_cl-fonts.scss */
+.fa-italic:before {
+    content: "\f033";
+}
+
+/* line 339, ../cl-sass/_cl-fonts.scss */
+.fa-text-height:before {
+    content: "\f034";
+}
+
+/* line 342, ../cl-sass/_cl-fonts.scss */
+.fa-text-width:before {
+    content: "\f035";
+}
+
+/* line 345, ../cl-sass/_cl-fonts.scss */
+.fa-align-left:before {
+    content: "\f036";
+}
+
+/* line 348, ../cl-sass/_cl-fonts.scss */
+.fa-align-center:before {
+    content: "\f037";
+}
+
+/* line 351, ../cl-sass/_cl-fonts.scss */
+.fa-align-right:before {
+    content: "\f038";
+}
+
+/* line 354, ../cl-sass/_cl-fonts.scss */
+.fa-align-justify:before {
+    content: "\f039";
+}
+
+/* line 357, ../cl-sass/_cl-fonts.scss */
+.fa-list:before {
+    content: "\f03a";
+}
+
+/* line 360, ../cl-sass/_cl-fonts.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+    content: "\f03b";
+}
+
+/* line 364, ../cl-sass/_cl-fonts.scss */
+.fa-indent:before {
+    content: "\f03c";
+}
+
+/* line 367, ../cl-sass/_cl-fonts.scss */
+.fa-video-camera:before {
+    content: "\f03d";
+}
+
+/* line 370, ../cl-sass/_cl-fonts.scss */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+    content: "\f03e";
+}
+
+/* line 375, ../cl-sass/_cl-fonts.scss */
+.fa-pencil:before {
+    content: "\f040";
+}
+
+/* line 378, ../cl-sass/_cl-fonts.scss */
+.fa-map-marker:before {
+    content: "\f041";
+}
+
+/* line 381, ../cl-sass/_cl-fonts.scss */
+.fa-adjust:before {
+    content: "\f042";
+}
+
+/* line 384, ../cl-sass/_cl-fonts.scss */
+.fa-tint:before {
+    content: "\f043";
+}
+
+/* line 387, ../cl-sass/_cl-fonts.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+    content: "\f044";
+}
+
+/* line 391, ../cl-sass/_cl-fonts.scss */
+.fa-share-square-o:before {
+    content: "\f045";
+}
+
+/* line 394, ../cl-sass/_cl-fonts.scss */
+.fa-check-square-o:before {
+    content: "\f046";
+}
+
+/* line 397, ../cl-sass/_cl-fonts.scss */
+.fa-arrows:before {
+    content: "\f047";
+}
+
+/* line 400, ../cl-sass/_cl-fonts.scss */
+.fa-step-backward:before {
+    content: "\f048";
+}
+
+/* line 403, ../cl-sass/_cl-fonts.scss */
+.fa-fast-backward:before {
+    content: "\f049";
+}
+
+/* line 406, ../cl-sass/_cl-fonts.scss */
+.fa-backward:before {
+    content: "\f04a";
+}
+
+/* line 409, ../cl-sass/_cl-fonts.scss */
+.fa-play:before {
+    content: "\f04b";
+}
+
+/* line 412, ../cl-sass/_cl-fonts.scss */
+.fa-pause:before {
+    content: "\f04c";
+}
+
+/* line 415, ../cl-sass/_cl-fonts.scss */
+.fa-stop:before {
+    content: "\f04d";
+}
+
+/* line 418, ../cl-sass/_cl-fonts.scss */
+.fa-forward:before {
+    content: "\f04e";
+}
+
+/* line 421, ../cl-sass/_cl-fonts.scss */
+.fa-fast-forward:before {
+    content: "\f050";
+}
+
+/* line 424, ../cl-sass/_cl-fonts.scss */
+.fa-step-forward:before {
+    content: "\f051";
+}
+
+/* line 427, ../cl-sass/_cl-fonts.scss */
+.fa-eject:before {
+    content: "\f052";
+}
+
+/* line 430, ../cl-sass/_cl-fonts.scss */
+.fa-chevron-left:before {
+    content: "\f053";
+}
+
+/* line 433, ../cl-sass/_cl-fonts.scss */
+.fa-chevron-right:before {
+    content: "\f054";
+}
+
+/* line 436, ../cl-sass/_cl-fonts.scss */
+.fa-plus-circle:before {
+    content: "\f055";
+}
+
+/* line 439, ../cl-sass/_cl-fonts.scss */
+.fa-minus-circle:before {
+    content: "\f056";
+}
+
+/* line 442, ../cl-sass/_cl-fonts.scss */
+.fa-times-circle:before {
+    content: "\f057";
+}
+
+/* line 445, ../cl-sass/_cl-fonts.scss */
+.fa-check-circle:before {
+    content: "\f058";
+}
+
+/* line 448, ../cl-sass/_cl-fonts.scss */
+.fa-question-circle:before {
+    content: "\f059";
+}
+
+/* line 451, ../cl-sass/_cl-fonts.scss */
+.fa-info-circle:before {
+    content: "\f05a";
+}
+
+/* line 454, ../cl-sass/_cl-fonts.scss */
+.fa-crosshairs:before {
+    content: "\f05b";
+}
+
+/* line 457, ../cl-sass/_cl-fonts.scss */
+.fa-times-circle-o:before {
+    content: "\f05c";
+}
+
+/* line 460, ../cl-sass/_cl-fonts.scss */
+.fa-check-circle-o:before {
+    content: "\f05d";
+}
+
+/* line 463, ../cl-sass/_cl-fonts.scss */
+.fa-ban:before {
+    content: "\f05e";
+}
+
+/* line 466, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-left:before {
+    content: "\f060";
+}
+
+/* line 469, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-right:before {
+    content: "\f061";
+}
+
+/* line 472, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-up:before {
+    content: "\f062";
+}
+
+/* line 475, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-down:before {
+    content: "\f063";
+}
+
+/* line 478, ../cl-sass/_cl-fonts.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+    content: "\f064";
+}
+
+/* line 482, ../cl-sass/_cl-fonts.scss */
+.fa-expand:before {
+    content: "\f065";
+}
+
+/* line 485, ../cl-sass/_cl-fonts.scss */
+.fa-compress:before {
+    content: "\f066";
+}
+
+/* line 488, ../cl-sass/_cl-fonts.scss */
+.fa-plus:before {
+    content: "\f067";
+}
+
+/* line 491, ../cl-sass/_cl-fonts.scss */
+.fa-minus:before {
+    content: "\f068";
+}
+
+/* line 494, ../cl-sass/_cl-fonts.scss */
+.fa-asterisk:before {
+    content: "\f069";
+}
+
+/* line 497, ../cl-sass/_cl-fonts.scss */
+.fa-exclamation-circle:before {
+    content: "\f06a";
+}
+
+/* line 500, ../cl-sass/_cl-fonts.scss */
+.fa-gift:before {
+    content: "\f06b";
+}
+
+/* line 503, ../cl-sass/_cl-fonts.scss */
+.fa-leaf:before {
+    content: "\f06c";
+}
+
+/* line 506, ../cl-sass/_cl-fonts.scss */
+.fa-fire:before {
+    content: "\f06d";
+}
+
+/* line 509, ../cl-sass/_cl-fonts.scss */
+.fa-eye:before {
+    content: "\f06e";
+}
+
+/* line 512, ../cl-sass/_cl-fonts.scss */
+.fa-eye-slash:before {
+    content: "\f070";
+}
+
+/* line 515, ../cl-sass/_cl-fonts.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+    content: "\f071";
+}
+
+/* line 519, ../cl-sass/_cl-fonts.scss */
+.fa-plane:before {
+    content: "\f072";
+}
+
+/* line 522, ../cl-sass/_cl-fonts.scss */
+.fa-calendar:before {
+    content: "\f073";
+}
+
+/* line 525, ../cl-sass/_cl-fonts.scss */
+.fa-random:before {
+    content: "\f074";
+}
+
+/* line 528, ../cl-sass/_cl-fonts.scss */
+.fa-comment:before {
+    content: "\f075";
+}
+
+/* line 531, ../cl-sass/_cl-fonts.scss */
+.fa-magnet:before {
+    content: "\f076";
+}
+
+/* line 534, ../cl-sass/_cl-fonts.scss */
+.fa-chevron-up:before {
+    content: "\f077";
+}
+
+/* line 537, ../cl-sass/_cl-fonts.scss */
+.fa-chevron-down:before {
+    content: "\f078";
+}
+
+/* line 540, ../cl-sass/_cl-fonts.scss */
+.fa-retweet:before {
+    content: "\f079";
+}
+
+/* line 543, ../cl-sass/_cl-fonts.scss */
+.fa-shopping-cart:before {
+    content: "\f07a";
+}
+
+/* line 546, ../cl-sass/_cl-fonts.scss */
+.fa-folder:before {
+    content: "\f07b";
+}
+
+/* line 549, ../cl-sass/_cl-fonts.scss */
+.fa-folder-open:before {
+    content: "\f07c";
+}
+
+/* line 552, ../cl-sass/_cl-fonts.scss */
+.fa-arrows-v:before {
+    content: "\f07d";
+}
+
+/* line 555, ../cl-sass/_cl-fonts.scss */
+.fa-arrows-h:before {
+    content: "\f07e";
+}
+
+/* line 558, ../cl-sass/_cl-fonts.scss */
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+    content: "\f080";
+}
+
+/* line 562, ../cl-sass/_cl-fonts.scss */
+.fa-twitter-square:before {
+    content: "\f081";
+}
+
+/* line 565, ../cl-sass/_cl-fonts.scss */
+.fa-facebook-square:before {
+    content: "\f082";
+}
+
+/* line 568, ../cl-sass/_cl-fonts.scss */
+.fa-camera-retro:before {
+    content: "\f083";
+}
+
+/* line 571, ../cl-sass/_cl-fonts.scss */
+.fa-key:before {
+    content: "\f084";
+}
+
+/* line 574, ../cl-sass/_cl-fonts.scss */
+.fa-gears:before,
+.fa-cogs:before {
+    content: "\f085";
+}
+
+/* line 578, ../cl-sass/_cl-fonts.scss */
+.fa-comments:before {
+    content: "\f086";
+}
+
+/* line 581, ../cl-sass/_cl-fonts.scss */
+.fa-thumbs-o-up:before {
+    content: "\f087";
+}
+
+/* line 584, ../cl-sass/_cl-fonts.scss */
+.fa-thumbs-o-down:before {
+    content: "\f088";
+}
+
+/* line 587, ../cl-sass/_cl-fonts.scss */
+.fa-star-half:before {
+    content: "\f089";
+}
+
+/* line 590, ../cl-sass/_cl-fonts.scss */
+.fa-heart-o:before {
+    content: "\f08a";
+}
+
+/* line 593, ../cl-sass/_cl-fonts.scss */
+.fa-sign-out:before {
+    content: "\f08b";
+}
+
+/* line 596, ../cl-sass/_cl-fonts.scss */
+.fa-linkedin-square:before {
+    content: "\f08c";
+}
+
+/* line 599, ../cl-sass/_cl-fonts.scss */
+.fa-thumb-tack:before {
+    content: "\f08d";
+}
+
+/* line 602, ../cl-sass/_cl-fonts.scss */
+.fa-external-link:before {
+    content: "\f08e";
+}
+
+/* line 605, ../cl-sass/_cl-fonts.scss */
+.fa-sign-in:before {
+    content: "\f090";
+}
+
+/* line 608, ../cl-sass/_cl-fonts.scss */
+.fa-trophy:before {
+    content: "\f091";
+}
+
+/* line 611, ../cl-sass/_cl-fonts.scss */
+.fa-github-square:before {
+    content: "\f092";
+}
+
+/* line 614, ../cl-sass/_cl-fonts.scss */
+.fa-upload:before {
+    content: "\f093";
+}
+
+/* line 617, ../cl-sass/_cl-fonts.scss */
+.fa-lemon-o:before {
+    content: "\f094";
+}
+
+/* line 620, ../cl-sass/_cl-fonts.scss */
+.fa-phone:before {
+    content: "\f095";
+}
+
+/* line 623, ../cl-sass/_cl-fonts.scss */
+.fa-square-o:before {
+    content: "\f096";
+}
+
+/* line 626, ../cl-sass/_cl-fonts.scss */
+.fa-bookmark-o:before {
+    content: "\f097";
+}
+
+/* line 629, ../cl-sass/_cl-fonts.scss */
+.fa-phone-square:before {
+    content: "\f098";
+}
+
+/* line 632, ../cl-sass/_cl-fonts.scss */
+.fa-twitter:before {
+    content: "\f099";
+}
+
+/* line 635, ../cl-sass/_cl-fonts.scss */
+.fa-facebook-f:before,
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+/* line 639, ../cl-sass/_cl-fonts.scss */
+.fa-github:before {
+    content: "\f09b";
+}
+
+/* line 642, ../cl-sass/_cl-fonts.scss */
+.fa-unlock:before {
+    content: "\f09c";
+}
+
+/* line 645, ../cl-sass/_cl-fonts.scss */
+.fa-credit-card:before {
+    content: "\f09d";
+}
+
+/* line 648, ../cl-sass/_cl-fonts.scss */
+.fa-feed:before,
+.fa-rss:before {
+    content: "\f09e";
+}
+
+/* line 652, ../cl-sass/_cl-fonts.scss */
+.fa-hdd-o:before {
+    content: "\f0a0";
+}
+
+/* line 655, ../cl-sass/_cl-fonts.scss */
+.fa-bullhorn:before {
+    content: "\f0a1";
+}
+
+/* line 658, ../cl-sass/_cl-fonts.scss */
+.fa-bell:before {
+    content: "\f0f3";
+}
+
+/* line 661, ../cl-sass/_cl-fonts.scss */
+.fa-certificate:before {
+    content: "\f0a3";
+}
+
+/* line 664, ../cl-sass/_cl-fonts.scss */
+.fa-hand-o-right:before {
+    content: "\f0a4";
+}
+
+/* line 667, ../cl-sass/_cl-fonts.scss */
+.fa-hand-o-left:before {
+    content: "\f0a5";
+}
+
+/* line 670, ../cl-sass/_cl-fonts.scss */
+.fa-hand-o-up:before {
+    content: "\f0a6";
+}
+
+/* line 673, ../cl-sass/_cl-fonts.scss */
+.fa-hand-o-down:before {
+    content: "\f0a7";
+}
+
+/* line 676, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-circle-left:before {
+    content: "\f0a8";
+}
+
+/* line 679, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-circle-right:before {
+    content: "\f0a9";
+}
+
+/* line 682, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-circle-up:before {
+    content: "\f0aa";
+}
+
+/* line 685, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-circle-down:before {
+    content: "\f0ab";
+}
+
+/* line 688, ../cl-sass/_cl-fonts.scss */
+.fa-globe:before {
+    content: "\f0ac";
+}
+
+/* line 691, ../cl-sass/_cl-fonts.scss */
+.fa-wrench:before {
+    content: "\f0ad";
+}
+
+/* line 694, ../cl-sass/_cl-fonts.scss */
+.fa-tasks:before {
+    content: "\f0ae";
+}
+
+/* line 697, ../cl-sass/_cl-fonts.scss */
+.fa-filter:before {
+    content: "\f0b0";
+}
+
+/* line 700, ../cl-sass/_cl-fonts.scss */
+.fa-briefcase:before {
+    content: "\f0b1";
+}
+
+/* line 703, ../cl-sass/_cl-fonts.scss */
+.fa-arrows-alt:before {
+    content: "\f0b2";
+}
+
+/* line 706, ../cl-sass/_cl-fonts.scss */
+.fa-group:before,
+.fa-users:before {
+    content: "\f0c0";
+}
+
+/* line 710, ../cl-sass/_cl-fonts.scss */
+.fa-chain:before,
+.fa-link:before {
+    content: "\f0c1";
+}
+
+/* line 714, ../cl-sass/_cl-fonts.scss */
+.fa-cloud:before {
+    content: "\f0c2";
+}
+
+/* line 717, ../cl-sass/_cl-fonts.scss */
+.fa-flask:before {
+    content: "\f0c3";
+}
+
+/* line 720, ../cl-sass/_cl-fonts.scss */
+.fa-cut:before,
+.fa-scissors:before {
+    content: "\f0c4";
+}
+
+/* line 724, ../cl-sass/_cl-fonts.scss */
+.fa-copy:before,
+.fa-files-o:before {
+    content: "\f0c5";
+}
+
+/* line 728, ../cl-sass/_cl-fonts.scss */
+.fa-paperclip:before {
+    content: "\f0c6";
+}
+
+/* line 731, ../cl-sass/_cl-fonts.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+    content: "\f0c7";
+}
+
+/* line 735, ../cl-sass/_cl-fonts.scss */
+.fa-square:before {
+    content: "\f0c8";
+}
+
+/* line 738, ../cl-sass/_cl-fonts.scss */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+/* line 743, ../cl-sass/_cl-fonts.scss */
+.fa-list-ul:before {
+    content: "\f0ca";
+}
+
+/* line 746, ../cl-sass/_cl-fonts.scss */
+.fa-list-ol:before {
+    content: "\f0cb";
+}
+
+/* line 749, ../cl-sass/_cl-fonts.scss */
+.fa-strikethrough:before {
+    content: "\f0cc";
+}
+
+/* line 752, ../cl-sass/_cl-fonts.scss */
+.fa-underline:before {
+    content: "\f0cd";
+}
+
+/* line 755, ../cl-sass/_cl-fonts.scss */
+.fa-table:before {
+    content: "\f0ce";
+}
+
+/* line 758, ../cl-sass/_cl-fonts.scss */
+.fa-magic:before {
+    content: "\f0d0";
+}
+
+/* line 761, ../cl-sass/_cl-fonts.scss */
+.fa-truck:before {
+    content: "\f0d1";
+}
+
+/* line 764, ../cl-sass/_cl-fonts.scss */
+.fa-pinterest:before {
+    content: "\f0d2";
+}
+
+/* line 767, ../cl-sass/_cl-fonts.scss */
+.fa-pinterest-square:before {
+    content: "\f0d3";
+}
+
+/* line 770, ../cl-sass/_cl-fonts.scss */
+.fa-google-plus-square:before {
+    content: "\f0d4";
+}
+
+/* line 773, ../cl-sass/_cl-fonts.scss */
+.fa-google-plus:before {
+    content: "\f0d5";
+}
+
+/* line 776, ../cl-sass/_cl-fonts.scss */
+.fa-money:before {
+    content: "\f0d6";
+}
+
+/* line 779, ../cl-sass/_cl-fonts.scss */
+.fa-caret-down:before {
+    content: "\f0d7";
+}
+
+/* line 782, ../cl-sass/_cl-fonts.scss */
+.fa-caret-up:before {
+    content: "\f0d8";
+}
+
+/* line 785, ../cl-sass/_cl-fonts.scss */
+.fa-caret-left:before {
+    content: "\f0d9";
+}
+
+/* line 788, ../cl-sass/_cl-fonts.scss */
+.fa-caret-right:before {
+    content: "\f0da";
+}
+
+/* line 791, ../cl-sass/_cl-fonts.scss */
+.fa-columns:before {
+    content: "\f0db";
+}
+
+/* line 794, ../cl-sass/_cl-fonts.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+    content: "\f0dc";
+}
+
+/* line 798, ../cl-sass/_cl-fonts.scss */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+    content: "\f0dd";
+}
+
+/* line 802, ../cl-sass/_cl-fonts.scss */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+    content: "\f0de";
+}
+
+/* line 806, ../cl-sass/_cl-fonts.scss */
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+/* line 809, ../cl-sass/_cl-fonts.scss */
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+
+/* line 812, ../cl-sass/_cl-fonts.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+    content: "\f0e2";
+}
+
+/* line 816, ../cl-sass/_cl-fonts.scss */
+.fa-legal:before,
+.fa-gavel:before {
+    content: "\f0e3";
+}
+
+/* line 820, ../cl-sass/_cl-fonts.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+    content: "\f0e4";
+}
+
+/* line 824, ../cl-sass/_cl-fonts.scss */
+.fa-comment-o:before {
+    content: "\f0e5";
+}
+
+/* line 827, ../cl-sass/_cl-fonts.scss */
+.fa-comments-o:before {
+    content: "\f0e6";
+}
+
+/* line 830, ../cl-sass/_cl-fonts.scss */
+.fa-flash:before,
+.fa-bolt:before {
+    content: "\f0e7";
+}
+
+/* line 834, ../cl-sass/_cl-fonts.scss */
+.fa-sitemap:before {
+    content: "\f0e8";
+}
+
+/* line 837, ../cl-sass/_cl-fonts.scss */
+.fa-umbrella:before {
+    content: "\f0e9";
+}
+
+/* line 840, ../cl-sass/_cl-fonts.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+    content: "\f0ea";
+}
+
+/* line 844, ../cl-sass/_cl-fonts.scss */
+.fa-lightbulb-o:before {
+    content: "\f0eb";
+}
+
+/* line 847, ../cl-sass/_cl-fonts.scss */
+.fa-exchange:before {
+    content: "\f0ec";
+}
+
+/* line 850, ../cl-sass/_cl-fonts.scss */
+.fa-cloud-download:before {
+    content: "\f0ed";
+}
+
+/* line 853, ../cl-sass/_cl-fonts.scss */
+.fa-cloud-upload:before {
+    content: "\f0ee";
+}
+
+/* line 856, ../cl-sass/_cl-fonts.scss */
+.fa-user-md:before {
+    content: "\f0f0";
+}
+
+/* line 859, ../cl-sass/_cl-fonts.scss */
+.fa-stethoscope:before {
+    content: "\f0f1";
+}
+
+/* line 862, ../cl-sass/_cl-fonts.scss */
+.fa-suitcase:before {
+    content: "\f0f2";
+}
+
+/* line 865, ../cl-sass/_cl-fonts.scss */
+.fa-bell-o:before {
+    content: "\f0a2";
+}
+
+/* line 868, ../cl-sass/_cl-fonts.scss */
+.fa-coffee:before {
+    content: "\f0f4";
+}
+
+/* line 871, ../cl-sass/_cl-fonts.scss */
+.fa-cutlery:before {
+    content: "\f0f5";
+}
+
+/* line 874, ../cl-sass/_cl-fonts.scss */
+.fa-file-text-o:before {
+    content: "\f0f6";
+}
+
+/* line 877, ../cl-sass/_cl-fonts.scss */
+.fa-building-o:before {
+    content: "\f0f7";
+}
+
+/* line 880, ../cl-sass/_cl-fonts.scss */
+.fa-hospital-o:before {
+    content: "\f0f8";
+}
+
+/* line 883, ../cl-sass/_cl-fonts.scss */
+.fa-ambulance:before {
+    content: "\f0f9";
+}
+
+/* line 886, ../cl-sass/_cl-fonts.scss */
+.fa-medkit:before {
+    content: "\f0fa";
+}
+
+/* line 889, ../cl-sass/_cl-fonts.scss */
+.fa-fighter-jet:before {
+    content: "\f0fb";
+}
+
+/* line 892, ../cl-sass/_cl-fonts.scss */
+.fa-beer:before {
+    content: "\f0fc";
+}
+
+/* line 895, ../cl-sass/_cl-fonts.scss */
+.fa-h-square:before {
+    content: "\f0fd";
+}
+
+/* line 898, ../cl-sass/_cl-fonts.scss */
+.fa-plus-square:before {
+    content: "\f0fe";
+}
+
+/* line 901, ../cl-sass/_cl-fonts.scss */
+.fa-angle-double-left:before {
+    content: "\f100";
+}
+
+/* line 904, ../cl-sass/_cl-fonts.scss */
+.fa-angle-double-right:before {
+    content: "\f101";
+}
+
+/* line 907, ../cl-sass/_cl-fonts.scss */
+.fa-angle-double-up:before {
+    content: "\f102";
+}
+
+/* line 910, ../cl-sass/_cl-fonts.scss */
+.fa-angle-double-down:before {
+    content: "\f103";
+}
+
+/* line 913, ../cl-sass/_cl-fonts.scss */
+.fa-angle-left:before {
+    content: "\f104";
+}
+
+/* line 916, ../cl-sass/_cl-fonts.scss */
+.fa-angle-right:before {
+    content: "\f105";
+}
+
+/* line 919, ../cl-sass/_cl-fonts.scss */
+.fa-angle-up:before {
+    content: "\f106";
+}
+
+/* line 922, ../cl-sass/_cl-fonts.scss */
+.fa-angle-down:before {
+    content: "\f107";
+}
+
+/* line 925, ../cl-sass/_cl-fonts.scss */
+.fa-desktop:before {
+    content: "\f108";
+}
+
+/* line 928, ../cl-sass/_cl-fonts.scss */
+.fa-laptop:before {
+    content: "\f109";
+}
+
+/* line 931, ../cl-sass/_cl-fonts.scss */
+.fa-tablet:before {
+    content: "\f10a";
+}
+
+/* line 934, ../cl-sass/_cl-fonts.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+    content: "\f10b";
+}
+
+/* line 938, ../cl-sass/_cl-fonts.scss */
+.fa-circle-o:before {
+    content: "\f10c";
+}
+
+/* line 941, ../cl-sass/_cl-fonts.scss */
+.fa-quote-left:before {
+    content: "\f10d";
+}
+
+/* line 944, ../cl-sass/_cl-fonts.scss */
+.fa-quote-right:before {
+    content: "\f10e";
+}
+
+/* line 947, ../cl-sass/_cl-fonts.scss */
+.fa-spinner:before {
+    content: "\f110";
+}
+
+/* line 950, ../cl-sass/_cl-fonts.scss */
+.fa-circle:before {
+    content: "\f111";
+}
+
+/* line 953, ../cl-sass/_cl-fonts.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+    content: "\f112";
+}
+
+/* line 957, ../cl-sass/_cl-fonts.scss */
+.fa-github-alt:before {
+    content: "\f113";
+}
+
+/* line 960, ../cl-sass/_cl-fonts.scss */
+.fa-folder-o:before {
+    content: "\f114";
+}
+
+/* line 963, ../cl-sass/_cl-fonts.scss */
+.fa-folder-open-o:before {
+    content: "\f115";
+}
+
+/* line 966, ../cl-sass/_cl-fonts.scss */
+.fa-smile-o:before {
+    content: "\f118";
+}
+
+/* line 969, ../cl-sass/_cl-fonts.scss */
+.fa-frown-o:before {
+    content: "\f119";
+}
+
+/* line 972, ../cl-sass/_cl-fonts.scss */
+.fa-meh-o:before {
+    content: "\f11a";
+}
+
+/* line 975, ../cl-sass/_cl-fonts.scss */
+.fa-gamepad:before {
+    content: "\f11b";
+}
+
+/* line 978, ../cl-sass/_cl-fonts.scss */
+.fa-keyboard-o:before {
+    content: "\f11c";
+}
+
+/* line 981, ../cl-sass/_cl-fonts.scss */
+.fa-flag-o:before {
+    content: "\f11d";
+}
+
+/* line 984, ../cl-sass/_cl-fonts.scss */
+.fa-flag-checkered:before {
+    content: "\f11e";
+}
+
+/* line 987, ../cl-sass/_cl-fonts.scss */
+.fa-terminal:before {
+    content: "\f120";
+}
+
+/* line 990, ../cl-sass/_cl-fonts.scss */
+.fa-code:before {
+    content: "\f121";
+}
+
+/* line 993, ../cl-sass/_cl-fonts.scss */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+    content: "\f122";
+}
+
+/* line 997, ../cl-sass/_cl-fonts.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+    content: "\f123";
+}
+
+/* line 1002, ../cl-sass/_cl-fonts.scss */
+.fa-location-arrow:before {
+    content: "\f124";
+}
+
+/* line 1005, ../cl-sass/_cl-fonts.scss */
+.fa-crop:before {
+    content: "\f125";
+}
+
+/* line 1008, ../cl-sass/_cl-fonts.scss */
+.fa-code-fork:before {
+    content: "\f126";
+}
+
+/* line 1011, ../cl-sass/_cl-fonts.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+    content: "\f127";
+}
+
+/* line 1015, ../cl-sass/_cl-fonts.scss */
+.fa-question:before {
+    content: "\f128";
+}
+
+/* line 1018, ../cl-sass/_cl-fonts.scss */
+.fa-info:before {
+    content: "\f129";
+}
+
+/* line 1021, ../cl-sass/_cl-fonts.scss */
+.fa-exclamation:before {
+    content: "\f12a";
+}
+
+/* line 1024, ../cl-sass/_cl-fonts.scss */
+.fa-superscript:before {
+    content: "\f12b";
+}
+
+/* line 1027, ../cl-sass/_cl-fonts.scss */
+.fa-subscript:before {
+    content: "\f12c";
+}
+
+/* line 1030, ../cl-sass/_cl-fonts.scss */
+.fa-eraser:before {
+    content: "\f12d";
+}
+
+/* line 1033, ../cl-sass/_cl-fonts.scss */
+.fa-puzzle-piece:before {
+    content: "\f12e";
+}
+
+/* line 1036, ../cl-sass/_cl-fonts.scss */
+.fa-microphone:before {
+    content: "\f130";
+}
+
+/* line 1039, ../cl-sass/_cl-fonts.scss */
+.fa-microphone-slash:before {
+    content: "\f131";
+}
+
+/* line 1042, ../cl-sass/_cl-fonts.scss */
+.fa-shield:before {
+    content: "\f132";
+}
+
+/* line 1045, ../cl-sass/_cl-fonts.scss */
+.fa-calendar-o:before {
+    content: "\f133";
+}
+
+/* line 1048, ../cl-sass/_cl-fonts.scss */
+.fa-fire-extinguisher:before {
+    content: "\f134";
+}
+
+/* line 1051, ../cl-sass/_cl-fonts.scss */
+.fa-rocket:before {
+    content: "\f135";
+}
+
+/* line 1054, ../cl-sass/_cl-fonts.scss */
+.fa-maxcdn:before {
+    content: "\f136";
+}
+
+/* line 1057, ../cl-sass/_cl-fonts.scss */
+.fa-chevron-circle-left:before {
+    content: "\f137";
+}
+
+/* line 1060, ../cl-sass/_cl-fonts.scss */
+.fa-chevron-circle-right:before {
+    content: "\f138";
+}
+
+/* line 1063, ../cl-sass/_cl-fonts.scss */
+.fa-chevron-circle-up:before {
+    content: "\f139";
+}
+
+/* line 1066, ../cl-sass/_cl-fonts.scss */
+.fa-chevron-circle-down:before {
+    content: "\f13a";
+}
+
+/* line 1069, ../cl-sass/_cl-fonts.scss */
+.fa-html5:before {
+    content: "\f13b";
+}
+
+/* line 1072, ../cl-sass/_cl-fonts.scss */
+.fa-css3:before {
+    content: "\f13c";
+}
+
+/* line 1075, ../cl-sass/_cl-fonts.scss */
+.fa-anchor:before {
+    content: "\f13d";
+}
+
+/* line 1078, ../cl-sass/_cl-fonts.scss */
+.fa-unlock-alt:before {
+    content: "\f13e";
+}
+
+/* line 1081, ../cl-sass/_cl-fonts.scss */
+.fa-bullseye:before {
+    content: "\f140";
+}
+
+/* line 1084, ../cl-sass/_cl-fonts.scss */
+.fa-ellipsis-h:before {
+    content: "\f141";
+}
+
+/* line 1087, ../cl-sass/_cl-fonts.scss */
+.fa-ellipsis-v:before {
+    content: "\f142";
+}
+
+/* line 1090, ../cl-sass/_cl-fonts.scss */
+.fa-rss-square:before {
+    content: "\f143";
+}
+
+/* line 1093, ../cl-sass/_cl-fonts.scss */
+.fa-play-circle:before {
+    content: "\f144";
+}
+
+/* line 1096, ../cl-sass/_cl-fonts.scss */
+.fa-ticket:before {
+    content: "\f145";
+}
+
+/* line 1099, ../cl-sass/_cl-fonts.scss */
+.fa-minus-square:before {
+    content: "\f146";
+}
+
+/* line 1102, ../cl-sass/_cl-fonts.scss */
+.fa-minus-square-o:before {
+    content: "\f147";
+}
+
+/* line 1105, ../cl-sass/_cl-fonts.scss */
+.fa-level-up:before {
+    content: "\f148";
+}
+
+/* line 1108, ../cl-sass/_cl-fonts.scss */
+.fa-level-down:before {
+    content: "\f149";
+}
+
+/* line 1111, ../cl-sass/_cl-fonts.scss */
+.fa-check-square:before {
+    content: "\f14a";
+}
+
+/* line 1114, ../cl-sass/_cl-fonts.scss */
+.fa-pencil-square:before {
+    content: "\f14b";
+}
+
+/* line 1117, ../cl-sass/_cl-fonts.scss */
+.fa-external-link-square:before {
+    content: "\f14c";
+}
+
+/* line 1120, ../cl-sass/_cl-fonts.scss */
+.fa-share-square:before {
+    content: "\f14d";
+}
+
+/* line 1123, ../cl-sass/_cl-fonts.scss */
+.fa-compass:before {
+    content: "\f14e";
+}
+
+/* line 1126, ../cl-sass/_cl-fonts.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+    content: "\f150";
+}
+
+/* line 1130, ../cl-sass/_cl-fonts.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+    content: "\f151";
+}
+
+/* line 1134, ../cl-sass/_cl-fonts.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+    content: "\f152";
+}
+
+/* line 1138, ../cl-sass/_cl-fonts.scss */
+.fa-euro:before,
+.fa-eur:before {
+    content: "\f153";
+}
+
+/* line 1142, ../cl-sass/_cl-fonts.scss */
+.fa-gbp:before {
+    content: "\f154";
+}
+
+/* line 1145, ../cl-sass/_cl-fonts.scss */
+.fa-dollar:before,
+.fa-usd:before {
+    content: "\f155";
+}
+
+/* line 1149, ../cl-sass/_cl-fonts.scss */
+.fa-rupee:before,
+.fa-inr:before {
+    content: "\f156";
+}
+
+/* line 1153, ../cl-sass/_cl-fonts.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+    content: "\f157";
+}
+
+/* line 1159, ../cl-sass/_cl-fonts.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+    content: "\f158";
+}
+
+/* line 1164, ../cl-sass/_cl-fonts.scss */
+.fa-won:before,
+.fa-krw:before {
+    content: "\f159";
+}
+
+/* line 1168, ../cl-sass/_cl-fonts.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+    content: "\f15a";
+}
+
+/* line 1172, ../cl-sass/_cl-fonts.scss */
+.fa-file:before {
+    content: "\f15b";
+}
+
+/* line 1175, ../cl-sass/_cl-fonts.scss */
+.fa-file-text:before {
+    content: "\f15c";
+}
+
+/* line 1178, ../cl-sass/_cl-fonts.scss */
+.fa-sort-alpha-asc:before {
+    content: "\f15d";
+}
+
+/* line 1181, ../cl-sass/_cl-fonts.scss */
+.fa-sort-alpha-desc:before {
+    content: "\f15e";
+}
+
+/* line 1184, ../cl-sass/_cl-fonts.scss */
+.fa-sort-amount-asc:before {
+    content: "\f160";
+}
+
+/* line 1187, ../cl-sass/_cl-fonts.scss */
+.fa-sort-amount-desc:before {
+    content: "\f161";
+}
+
+/* line 1190, ../cl-sass/_cl-fonts.scss */
+.fa-sort-numeric-asc:before {
+    content: "\f162";
+}
+
+/* line 1193, ../cl-sass/_cl-fonts.scss */
+.fa-sort-numeric-desc:before {
+    content: "\f163";
+}
+
+/* line 1196, ../cl-sass/_cl-fonts.scss */
+.fa-thumbs-up:before {
+    content: "\f164";
+}
+
+/* line 1199, ../cl-sass/_cl-fonts.scss */
+.fa-thumbs-down:before {
+    content: "\f165";
+}
+
+/* line 1202, ../cl-sass/_cl-fonts.scss */
+.fa-youtube-square:before {
+    content: "\f166";
+}
+
+/* line 1205, ../cl-sass/_cl-fonts.scss */
+.fa-youtube:before {
+    content: "\f167";
+}
+
+/* line 1208, ../cl-sass/_cl-fonts.scss */
+.fa-xing:before {
+    content: "\f168";
+}
+
+/* line 1211, ../cl-sass/_cl-fonts.scss */
+.fa-xing-square:before {
+    content: "\f169";
+}
+
+/* line 1214, ../cl-sass/_cl-fonts.scss */
+.fa-youtube-play:before {
+    content: "\f16a";
+}
+
+/* line 1217, ../cl-sass/_cl-fonts.scss */
+.fa-dropbox:before {
+    content: "\f16b";
+}
+
+/* line 1220, ../cl-sass/_cl-fonts.scss */
+.fa-stack-overflow:before {
+    content: "\f16c";
+}
+
+/* line 1223, ../cl-sass/_cl-fonts.scss */
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+/* line 1226, ../cl-sass/_cl-fonts.scss */
+.fa-flickr:before {
+    content: "\f16e";
+}
+
+/* line 1229, ../cl-sass/_cl-fonts.scss */
+.fa-adn:before {
+    content: "\f170";
+}
+
+/* line 1232, ../cl-sass/_cl-fonts.scss */
+.fa-bitbucket:before {
+    content: "\f171";
+}
+
+/* line 1235, ../cl-sass/_cl-fonts.scss */
+.fa-bitbucket-square:before {
+    content: "\f172";
+}
+
+/* line 1238, ../cl-sass/_cl-fonts.scss */
+.fa-tumblr:before {
+    content: "\f173";
+}
+
+/* line 1241, ../cl-sass/_cl-fonts.scss */
+.fa-tumblr-square:before {
+    content: "\f174";
+}
+
+/* line 1244, ../cl-sass/_cl-fonts.scss */
+.fa-long-arrow-down:before {
+    content: "\f175";
+}
+
+/* line 1247, ../cl-sass/_cl-fonts.scss */
+.fa-long-arrow-up:before {
+    content: "\f176";
+}
+
+/* line 1250, ../cl-sass/_cl-fonts.scss */
+.fa-long-arrow-left:before {
+    content: "\f177";
+}
+
+/* line 1253, ../cl-sass/_cl-fonts.scss */
+.fa-long-arrow-right:before {
+    content: "\f178";
+}
+
+/* line 1256, ../cl-sass/_cl-fonts.scss */
+.fa-apple:before {
+    content: "\f179";
+}
+
+/* line 1259, ../cl-sass/_cl-fonts.scss */
+.fa-windows:before {
+    content: "\f17a";
+}
+
+/* line 1262, ../cl-sass/_cl-fonts.scss */
+.fa-android:before {
+    content: "\f17b";
+}
+
+/* line 1265, ../cl-sass/_cl-fonts.scss */
+.fa-linux:before {
+    content: "\f17c";
+}
+
+/* line 1268, ../cl-sass/_cl-fonts.scss */
+.fa-dribbble:before {
+    content: "\f17d";
+}
+
+/* line 1271, ../cl-sass/_cl-fonts.scss */
+.fa-skype:before {
+    content: "\f17e";
+}
+
+/* line 1274, ../cl-sass/_cl-fonts.scss */
+.fa-foursquare:before {
+    content: "\f180";
+}
+
+/* line 1277, ../cl-sass/_cl-fonts.scss */
+.fa-trello:before {
+    content: "\f181";
+}
+
+/* line 1280, ../cl-sass/_cl-fonts.scss */
+.fa-female:before {
+    content: "\f182";
+}
+
+/* line 1283, ../cl-sass/_cl-fonts.scss */
+.fa-male:before {
+    content: "\f183";
+}
+
+/* line 1286, ../cl-sass/_cl-fonts.scss */
+.fa-gittip:before,
+.fa-gratipay:before {
+    content: "\f184";
+}
+
+/* line 1290, ../cl-sass/_cl-fonts.scss */
+.fa-sun-o:before {
+    content: "\f185";
+}
+
+/* line 1293, ../cl-sass/_cl-fonts.scss */
+.fa-moon-o:before {
+    content: "\f186";
+}
+
+/* line 1296, ../cl-sass/_cl-fonts.scss */
+.fa-archive:before {
+    content: "\f187";
+}
+
+/* line 1299, ../cl-sass/_cl-fonts.scss */
+.fa-bug:before {
+    content: "\f188";
+}
+
+/* line 1302, ../cl-sass/_cl-fonts.scss */
+.fa-vk:before {
+    content: "\f189";
+}
+
+/* line 1305, ../cl-sass/_cl-fonts.scss */
+.fa-weibo:before {
+    content: "\f18a";
+}
+
+/* line 1308, ../cl-sass/_cl-fonts.scss */
+.fa-renren:before {
+    content: "\f18b";
+}
+
+/* line 1311, ../cl-sass/_cl-fonts.scss */
+.fa-pagelines:before {
+    content: "\f18c";
+}
+
+/* line 1314, ../cl-sass/_cl-fonts.scss */
+.fa-stack-exchange:before {
+    content: "\f18d";
+}
+
+/* line 1317, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-circle-o-right:before {
+    content: "\f18e";
+}
+
+/* line 1320, ../cl-sass/_cl-fonts.scss */
+.fa-arrow-circle-o-left:before {
+    content: "\f190";
+}
+
+/* line 1323, ../cl-sass/_cl-fonts.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+    content: "\f191";
+}
+
+/* line 1327, ../cl-sass/_cl-fonts.scss */
+.fa-dot-circle-o:before {
+    content: "\f192";
+}
+
+/* line 1330, ../cl-sass/_cl-fonts.scss */
+.fa-wheelchair:before {
+    content: "\f193";
+}
+
+/* line 1333, ../cl-sass/_cl-fonts.scss */
+.fa-vimeo-square:before {
+    content: "\f194";
+}
+
+/* line 1336, ../cl-sass/_cl-fonts.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+    content: "\f195";
+}
+
+/* line 1340, ../cl-sass/_cl-fonts.scss */
+.fa-plus-square-o:before {
+    content: "\f196";
+}
+
+/* line 1343, ../cl-sass/_cl-fonts.scss */
+.fa-space-shuttle:before {
+    content: "\f197";
+}
+
+/* line 1346, ../cl-sass/_cl-fonts.scss */
+.fa-slack:before {
+    content: "\f198";
+}
+
+/* line 1349, ../cl-sass/_cl-fonts.scss */
+.fa-envelope-square:before {
+    content: "\f199";
+}
+
+/* line 1352, ../cl-sass/_cl-fonts.scss */
+.fa-wordpress:before {
+    content: "\f19a";
+}
+
+/* line 1355, ../cl-sass/_cl-fonts.scss */
+.fa-openid:before {
+    content: "\f19b";
+}
+
+/* line 1358, ../cl-sass/_cl-fonts.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+    content: "\f19c";
+}
+
+/* line 1363, ../cl-sass/_cl-fonts.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+    content: "\f19d";
+}
+
+/* line 1367, ../cl-sass/_cl-fonts.scss */
+.fa-yahoo:before {
+    content: "\f19e";
+}
+
+/* line 1370, ../cl-sass/_cl-fonts.scss */
+.fa-google:before {
+    content: "\f1a0";
+}
+
+/* line 1373, ../cl-sass/_cl-fonts.scss */
+.fa-reddit:before {
+    content: "\f1a1";
+}
+
+/* line 1376, ../cl-sass/_cl-fonts.scss */
+.fa-reddit-square:before {
+    content: "\f1a2";
+}
+
+/* line 1379, ../cl-sass/_cl-fonts.scss */
+.fa-stumbleupon-circle:before {
+    content: "\f1a3";
+}
+
+/* line 1382, ../cl-sass/_cl-fonts.scss */
+.fa-stumbleupon:before {
+    content: "\f1a4";
+}
+
+/* line 1385, ../cl-sass/_cl-fonts.scss */
+.fa-delicious:before {
+    content: "\f1a5";
+}
+
+/* line 1388, ../cl-sass/_cl-fonts.scss */
+.fa-digg:before {
+    content: "\f1a6";
+}
+
+/* line 1391, ../cl-sass/_cl-fonts.scss */
+.fa-pied-piper-pp:before {
+    content: "\f1a7";
+}
+
+/* line 1394, ../cl-sass/_cl-fonts.scss */
+.fa-pied-piper-alt:before {
+    content: "\f1a8";
+}
+
+/* line 1397, ../cl-sass/_cl-fonts.scss */
+.fa-drupal:before {
+    content: "\f1a9";
+}
+
+/* line 1400, ../cl-sass/_cl-fonts.scss */
+.fa-joomla:before {
+    content: "\f1aa";
+}
+
+/* line 1403, ../cl-sass/_cl-fonts.scss */
+.fa-language:before {
+    content: "\f1ab";
+}
+
+/* line 1406, ../cl-sass/_cl-fonts.scss */
+.fa-fax:before {
+    content: "\f1ac";
+}
+
+/* line 1409, ../cl-sass/_cl-fonts.scss */
+.fa-building:before {
+    content: "\f1ad";
+}
+
+/* line 1412, ../cl-sass/_cl-fonts.scss */
+.fa-child:before {
+    content: "\f1ae";
+}
+
+/* line 1415, ../cl-sass/_cl-fonts.scss */
+.fa-paw:before {
+    content: "\f1b0";
+}
+
+/* line 1418, ../cl-sass/_cl-fonts.scss */
+.fa-spoon:before {
+    content: "\f1b1";
+}
+
+/* line 1421, ../cl-sass/_cl-fonts.scss */
+.fa-cube:before {
+    content: "\f1b2";
+}
+
+/* line 1424, ../cl-sass/_cl-fonts.scss */
+.fa-cubes:before {
+    content: "\f1b3";
+}
+
+/* line 1427, ../cl-sass/_cl-fonts.scss */
+.fa-behance:before {
+    content: "\f1b4";
+}
+
+/* line 1430, ../cl-sass/_cl-fonts.scss */
+.fa-behance-square:before {
+    content: "\f1b5";
+}
+
+/* line 1433, ../cl-sass/_cl-fonts.scss */
+.fa-steam:before {
+    content: "\f1b6";
+}
+
+/* line 1436, ../cl-sass/_cl-fonts.scss */
+.fa-steam-square:before {
+    content: "\f1b7";
+}
+
+/* line 1439, ../cl-sass/_cl-fonts.scss */
+.fa-recycle:before {
+    content: "\f1b8";
+}
+
+/* line 1442, ../cl-sass/_cl-fonts.scss */
+.fa-automobile:before,
+.fa-car:before {
+    content: "\f1b9";
+}
+
+/* line 1446, ../cl-sass/_cl-fonts.scss */
+.fa-cab:before,
+.fa-taxi:before {
+    content: "\f1ba";
+}
+
+/* line 1450, ../cl-sass/_cl-fonts.scss */
+.fa-tree:before {
+    content: "\f1bb";
+}
+
+/* line 1453, ../cl-sass/_cl-fonts.scss */
+.fa-spotify:before {
+    content: "\f1bc";
+}
+
+/* line 1456, ../cl-sass/_cl-fonts.scss */
+.fa-deviantart:before {
+    content: "\f1bd";
+}
+
+/* line 1459, ../cl-sass/_cl-fonts.scss */
+.fa-soundcloud:before {
+    content: "\f1be";
+}
+
+/* line 1462, ../cl-sass/_cl-fonts.scss */
+.fa-database:before {
+    content: "\f1c0";
+}
+
+/* line 1465, ../cl-sass/_cl-fonts.scss */
+.fa-file-pdf-o:before {
+    content: "\f1c1";
+}
+
+/* line 1468, ../cl-sass/_cl-fonts.scss */
+.fa-file-word-o:before {
+    content: "\f1c2";
+}
+
+/* line 1471, ../cl-sass/_cl-fonts.scss */
+.fa-file-excel-o:before {
+    content: "\f1c3";
+}
+
+/* line 1474, ../cl-sass/_cl-fonts.scss */
+.fa-file-powerpoint-o:before {
+    content: "\f1c4";
+}
+
+/* line 1477, ../cl-sass/_cl-fonts.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+    content: "\f1c5";
+}
+
+/* line 1482, ../cl-sass/_cl-fonts.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+    content: "\f1c6";
+}
+
+/* line 1486, ../cl-sass/_cl-fonts.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+    content: "\f1c7";
+}
+
+/* line 1490, ../cl-sass/_cl-fonts.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+    content: "\f1c8";
+}
+
+/* line 1494, ../cl-sass/_cl-fonts.scss */
+.fa-file-code-o:before {
+    content: "\f1c9";
+}
+
+/* line 1497, ../cl-sass/_cl-fonts.scss */
+.fa-vine:before {
+    content: "\f1ca";
+}
+
+/* line 1500, ../cl-sass/_cl-fonts.scss */
+.fa-codepen:before {
+    content: "\f1cb";
+}
+
+/* line 1503, ../cl-sass/_cl-fonts.scss */
+.fa-jsfiddle:before {
+    content: "\f1cc";
+}
+
+/* line 1506, ../cl-sass/_cl-fonts.scss */
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+    content: "\f1cd";
+}
+
+/* line 1513, ../cl-sass/_cl-fonts.scss */
+.fa-circle-o-notch:before {
+    content: "\f1ce";
+}
+
+/* line 1516, ../cl-sass/_cl-fonts.scss */
+.fa-ra:before,
+.fa-resistance:before,
+.fa-rebel:before {
+    content: "\f1d0";
+}
+
+/* line 1521, ../cl-sass/_cl-fonts.scss */
+.fa-ge:before,
+.fa-empire:before {
+    content: "\f1d1";
+}
+
+/* line 1525, ../cl-sass/_cl-fonts.scss */
+.fa-git-square:before {
+    content: "\f1d2";
+}
+
+/* line 1528, ../cl-sass/_cl-fonts.scss */
+.fa-git:before {
+    content: "\f1d3";
+}
+
+/* line 1531, ../cl-sass/_cl-fonts.scss */
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+    content: "\f1d4";
+}
+
+/* line 1536, ../cl-sass/_cl-fonts.scss */
+.fa-tencent-weibo:before {
+    content: "\f1d5";
+}
+
+/* line 1539, ../cl-sass/_cl-fonts.scss */
+.fa-qq:before {
+    content: "\f1d6";
+}
+
+/* line 1542, ../cl-sass/_cl-fonts.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+    content: "\f1d7";
+}
+
+/* line 1546, ../cl-sass/_cl-fonts.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+    content: "\f1d8";
+}
+
+/* line 1550, ../cl-sass/_cl-fonts.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+    content: "\f1d9";
+}
+
+/* line 1554, ../cl-sass/_cl-fonts.scss */
+.fa-history:before {
+    content: "\f1da";
+}
+
+/* line 1557, ../cl-sass/_cl-fonts.scss */
+.fa-circle-thin:before {
+    content: "\f1db";
+}
+
+/* line 1560, ../cl-sass/_cl-fonts.scss */
+.fa-header:before {
+    content: "\f1dc";
+}
+
+/* line 1563, ../cl-sass/_cl-fonts.scss */
+.fa-paragraph:before {
+    content: "\f1dd";
+}
+
+/* line 1566, ../cl-sass/_cl-fonts.scss */
+.fa-sliders:before {
+    content: "\f1de";
+}
+
+/* line 1569, ../cl-sass/_cl-fonts.scss */
+.fa-share-alt:before {
+    content: "\f1e0";
+}
+
+/* line 1572, ../cl-sass/_cl-fonts.scss */
+.fa-share-alt-square:before {
+    content: "\f1e1";
+}
+
+/* line 1575, ../cl-sass/_cl-fonts.scss */
+.fa-bomb:before {
+    content: "\f1e2";
+}
+
+/* line 1578, ../cl-sass/_cl-fonts.scss */
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+    content: "\f1e3";
+}
+
+/* line 1582, ../cl-sass/_cl-fonts.scss */
+.fa-tty:before {
+    content: "\f1e4";
+}
+
+/* line 1585, ../cl-sass/_cl-fonts.scss */
+.fa-binoculars:before {
+    content: "\f1e5";
+}
+
+/* line 1588, ../cl-sass/_cl-fonts.scss */
+.fa-plug:before {
+    content: "\f1e6";
+}
+
+/* line 1591, ../cl-sass/_cl-fonts.scss */
+.fa-slideshare:before {
+    content: "\f1e7";
+}
+
+/* line 1594, ../cl-sass/_cl-fonts.scss */
+.fa-twitch:before {
+    content: "\f1e8";
+}
+
+/* line 1597, ../cl-sass/_cl-fonts.scss */
+.fa-yelp:before {
+    content: "\f1e9";
+}
+
+/* line 1600, ../cl-sass/_cl-fonts.scss */
+.fa-newspaper-o:before {
+    content: "\f1ea";
+}
+
+/* line 1603, ../cl-sass/_cl-fonts.scss */
+.fa-wifi:before {
+    content: "\f1eb";
+}
+
+/* line 1606, ../cl-sass/_cl-fonts.scss */
+.fa-calculator:before {
+    content: "\f1ec";
+}
+
+/* line 1609, ../cl-sass/_cl-fonts.scss */
+.fa-paypal:before {
+    content: "\f1ed";
+}
+
+/* line 1612, ../cl-sass/_cl-fonts.scss */
+.fa-google-wallet:before {
+    content: "\f1ee";
+}
+
+/* line 1615, ../cl-sass/_cl-fonts.scss */
+.fa-cc-visa:before {
+    content: "\f1f0";
+}
+
+/* line 1618, ../cl-sass/_cl-fonts.scss */
+.fa-cc-mastercard:before {
+    content: "\f1f1";
+}
+
+/* line 1621, ../cl-sass/_cl-fonts.scss */
+.fa-cc-discover:before {
+    content: "\f1f2";
+}
+
+/* line 1624, ../cl-sass/_cl-fonts.scss */
+.fa-cc-amex:before {
+    content: "\f1f3";
+}
+
+/* line 1627, ../cl-sass/_cl-fonts.scss */
+.fa-cc-paypal:before {
+    content: "\f1f4";
+}
+
+/* line 1630, ../cl-sass/_cl-fonts.scss */
+.fa-cc-stripe:before {
+    content: "\f1f5";
+}
+
+/* line 1633, ../cl-sass/_cl-fonts.scss */
+.fa-bell-slash:before {
+    content: "\f1f6";
+}
+
+/* line 1636, ../cl-sass/_cl-fonts.scss */
+.fa-bell-slash-o:before {
+    content: "\f1f7";
+}
+
+/* line 1639, ../cl-sass/_cl-fonts.scss */
+.fa-trash:before {
+    content: "\f1f8";
+}
+
+/* line 1642, ../cl-sass/_cl-fonts.scss */
+.fa-copyright:before {
+    content: "\f1f9";
+}
+
+/* line 1645, ../cl-sass/_cl-fonts.scss */
+.fa-at:before {
+    content: "\f1fa";
+}
+
+/* line 1648, ../cl-sass/_cl-fonts.scss */
+.fa-eyedropper:before {
+    content: "\f1fb";
+}
+
+/* line 1651, ../cl-sass/_cl-fonts.scss */
+.fa-paint-brush:before {
+    content: "\f1fc";
+}
+
+/* line 1654, ../cl-sass/_cl-fonts.scss */
+.fa-birthday-cake:before {
+    content: "\f1fd";
+}
+
+/* line 1657, ../cl-sass/_cl-fonts.scss */
+.fa-area-chart:before {
+    content: "\f1fe";
+}
+
+/* line 1660, ../cl-sass/_cl-fonts.scss */
+.fa-pie-chart:before {
+    content: "\f200";
+}
+
+/* line 1663, ../cl-sass/_cl-fonts.scss */
+.fa-line-chart:before {
+    content: "\f201";
+}
+
+/* line 1666, ../cl-sass/_cl-fonts.scss */
+.fa-lastfm:before {
+    content: "\f202";
+}
+
+/* line 1669, ../cl-sass/_cl-fonts.scss */
+.fa-lastfm-square:before {
+    content: "\f203";
+}
+
+/* line 1672, ../cl-sass/_cl-fonts.scss */
+.fa-toggle-off:before {
+    content: "\f204";
+}
+
+/* line 1675, ../cl-sass/_cl-fonts.scss */
+.fa-toggle-on:before {
+    content: "\f205";
+}
+
+/* line 1678, ../cl-sass/_cl-fonts.scss */
+.fa-bicycle:before {
+    content: "\f206";
+}
+
+/* line 1681, ../cl-sass/_cl-fonts.scss */
+.fa-bus:before {
+    content: "\f207";
+}
+
+/* line 1684, ../cl-sass/_cl-fonts.scss */
+.fa-ioxhost:before {
+    content: "\f208";
+}
+
+/* line 1687, ../cl-sass/_cl-fonts.scss */
+.fa-angellist:before {
+    content: "\f209";
+}
+
+/* line 1690, ../cl-sass/_cl-fonts.scss */
+.fa-cc:before {
+    content: "\f20a";
+}
+
+/* line 1693, ../cl-sass/_cl-fonts.scss */
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+    content: "\f20b";
+}
+
+/* line 1698, ../cl-sass/_cl-fonts.scss */
+.fa-meanpath:before {
+    content: "\f20c";
+}
+
+/* line 1701, ../cl-sass/_cl-fonts.scss */
+.fa-buysellads:before {
+    content: "\f20d";
+}
+
+/* line 1704, ../cl-sass/_cl-fonts.scss */
+.fa-connectdevelop:before {
+    content: "\f20e";
+}
+
+/* line 1707, ../cl-sass/_cl-fonts.scss */
+.fa-dashcube:before {
+    content: "\f210";
+}
+
+/* line 1710, ../cl-sass/_cl-fonts.scss */
+.fa-forumbee:before {
+    content: "\f211";
+}
+
+/* line 1713, ../cl-sass/_cl-fonts.scss */
+.fa-leanpub:before {
+    content: "\f212";
+}
+
+/* line 1716, ../cl-sass/_cl-fonts.scss */
+.fa-sellsy:before {
+    content: "\f213";
+}
+
+/* line 1719, ../cl-sass/_cl-fonts.scss */
+.fa-shirtsinbulk:before {
+    content: "\f214";
+}
+
+/* line 1722, ../cl-sass/_cl-fonts.scss */
+.fa-simplybuilt:before {
+    content: "\f215";
+}
+
+/* line 1725, ../cl-sass/_cl-fonts.scss */
+.fa-skyatlas:before {
+    content: "\f216";
+}
+
+/* line 1728, ../cl-sass/_cl-fonts.scss */
+.fa-cart-plus:before {
+    content: "\f217";
+}
+
+/* line 1731, ../cl-sass/_cl-fonts.scss */
+.fa-cart-arrow-down:before {
+    content: "\f218";
+}
+
+/* line 1734, ../cl-sass/_cl-fonts.scss */
+.fa-diamond:before {
+    content: "\f219";
+}
+
+/* line 1737, ../cl-sass/_cl-fonts.scss */
+.fa-ship:before {
+    content: "\f21a";
+}
+
+/* line 1740, ../cl-sass/_cl-fonts.scss */
+.fa-user-secret:before {
+    content: "\f21b";
+}
+
+/* line 1743, ../cl-sass/_cl-fonts.scss */
+.fa-motorcycle:before {
+    content: "\f21c";
+}
+
+/* line 1746, ../cl-sass/_cl-fonts.scss */
+.fa-street-view:before {
+    content: "\f21d";
+}
+
+/* line 1749, ../cl-sass/_cl-fonts.scss */
+.fa-heartbeat:before {
+    content: "\f21e";
+}
+
+/* line 1752, ../cl-sass/_cl-fonts.scss */
+.fa-venus:before {
+    content: "\f221";
+}
+
+/* line 1755, ../cl-sass/_cl-fonts.scss */
+.fa-mars:before {
+    content: "\f222";
+}
+
+/* line 1758, ../cl-sass/_cl-fonts.scss */
+.fa-mercury:before {
+    content: "\f223";
+}
+
+/* line 1761, ../cl-sass/_cl-fonts.scss */
+.fa-intersex:before,
+.fa-transgender:before {
+    content: "\f224";
+}
+
+/* line 1765, ../cl-sass/_cl-fonts.scss */
+.fa-transgender-alt:before {
+    content: "\f225";
+}
+
+/* line 1768, ../cl-sass/_cl-fonts.scss */
+.fa-venus-double:before {
+    content: "\f226";
+}
+
+/* line 1771, ../cl-sass/_cl-fonts.scss */
+.fa-mars-double:before {
+    content: "\f227";
+}
+
+/* line 1774, ../cl-sass/_cl-fonts.scss */
+.fa-venus-mars:before {
+    content: "\f228";
+}
+
+/* line 1777, ../cl-sass/_cl-fonts.scss */
+.fa-mars-stroke:before {
+    content: "\f229";
+}
+
+/* line 1780, ../cl-sass/_cl-fonts.scss */
+.fa-mars-stroke-v:before {
+    content: "\f22a";
+}
+
+/* line 1783, ../cl-sass/_cl-fonts.scss */
+.fa-mars-stroke-h:before {
+    content: "\f22b";
+}
+
+/* line 1786, ../cl-sass/_cl-fonts.scss */
+.fa-neuter:before {
+    content: "\f22c";
+}
+
+/* line 1789, ../cl-sass/_cl-fonts.scss */
+.fa-genderless:before {
+    content: "\f22d";
+}
+
+/* line 1792, ../cl-sass/_cl-fonts.scss */
+.fa-facebook-official:before {
+    content: "\f230";
+}
+
+/* line 1795, ../cl-sass/_cl-fonts.scss */
+.fa-pinterest-p:before {
+    content: "\f231";
+}
+
+/* line 1798, ../cl-sass/_cl-fonts.scss */
+.fa-whatsapp:before {
+    content: "\f232";
+}
+
+/* line 1801, ../cl-sass/_cl-fonts.scss */
+.fa-server:before {
+    content: "\f233";
+}
+
+/* line 1804, ../cl-sass/_cl-fonts.scss */
+.fa-user-plus:before {
+    content: "\f234";
+}
+
+/* line 1807, ../cl-sass/_cl-fonts.scss */
+.fa-user-times:before {
+    content: "\f235";
+}
+
+/* line 1810, ../cl-sass/_cl-fonts.scss */
+.fa-hotel:before,
+.fa-bed:before {
+    content: "\f236";
+}
+
+/* line 1814, ../cl-sass/_cl-fonts.scss */
+.fa-viacoin:before {
+    content: "\f237";
+}
+
+/* line 1817, ../cl-sass/_cl-fonts.scss */
+.fa-train:before {
+    content: "\f238";
+}
+
+/* line 1820, ../cl-sass/_cl-fonts.scss */
+.fa-subway:before {
+    content: "\f239";
+}
+
+/* line 1823, ../cl-sass/_cl-fonts.scss */
+.fa-medium:before {
+    content: "\f23a";
+}
+
+/* line 1826, ../cl-sass/_cl-fonts.scss */
+.fa-yc:before,
+.fa-y-combinator:before {
+    content: "\f23b";
+}
+
+/* line 1830, ../cl-sass/_cl-fonts.scss */
+.fa-optin-monster:before {
+    content: "\f23c";
+}
+
+/* line 1833, ../cl-sass/_cl-fonts.scss */
+.fa-opencart:before {
+    content: "\f23d";
+}
+
+/* line 1836, ../cl-sass/_cl-fonts.scss */
+.fa-expeditedssl:before {
+    content: "\f23e";
+}
+
+/* line 1839, ../cl-sass/_cl-fonts.scss */
+.fa-battery-4:before,
+.fa-battery:before,
+.fa-battery-full:before {
+    content: "\f240";
+}
+
+/* line 1844, ../cl-sass/_cl-fonts.scss */
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+    content: "\f241";
+}
+
+/* line 1848, ../cl-sass/_cl-fonts.scss */
+.fa-battery-2:before,
+.fa-battery-half:before {
+    content: "\f242";
+}
+
+/* line 1852, ../cl-sass/_cl-fonts.scss */
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+    content: "\f243";
+}
+
+/* line 1856, ../cl-sass/_cl-fonts.scss */
+.fa-battery-0:before,
+.fa-battery-empty:before {
+    content: "\f244";
+}
+
+/* line 1860, ../cl-sass/_cl-fonts.scss */
+.fa-mouse-pointer:before {
+    content: "\f245";
+}
+
+/* line 1863, ../cl-sass/_cl-fonts.scss */
+.fa-i-cursor:before {
+    content: "\f246";
+}
+
+/* line 1866, ../cl-sass/_cl-fonts.scss */
+.fa-object-group:before {
+    content: "\f247";
+}
+
+/* line 1869, ../cl-sass/_cl-fonts.scss */
+.fa-object-ungroup:before {
+    content: "\f248";
+}
+
+/* line 1872, ../cl-sass/_cl-fonts.scss */
+.fa-sticky-note:before {
+    content: "\f249";
+}
+
+/* line 1875, ../cl-sass/_cl-fonts.scss */
+.fa-sticky-note-o:before {
+    content: "\f24a";
+}
+
+/* line 1878, ../cl-sass/_cl-fonts.scss */
+.fa-cc-jcb:before {
+    content: "\f24b";
+}
+
+/* line 1881, ../cl-sass/_cl-fonts.scss */
+.fa-cc-diners-club:before {
+    content: "\f24c";
+}
+
+/* line 1884, ../cl-sass/_cl-fonts.scss */
+.fa-clone:before {
+    content: "\f24d";
+}
+
+/* line 1887, ../cl-sass/_cl-fonts.scss */
+.fa-balance-scale:before {
+    content: "\f24e";
+}
+
+/* line 1890, ../cl-sass/_cl-fonts.scss */
+.fa-hourglass-o:before {
+    content: "\f250";
+}
+
+/* line 1893, ../cl-sass/_cl-fonts.scss */
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+    content: "\f251";
+}
+
+/* line 1897, ../cl-sass/_cl-fonts.scss */
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+    content: "\f252";
+}
+
+/* line 1901, ../cl-sass/_cl-fonts.scss */
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+    content: "\f253";
+}
+
+/* line 1905, ../cl-sass/_cl-fonts.scss */
+.fa-hourglass:before {
+    content: "\f254";
+}
+
+/* line 1908, ../cl-sass/_cl-fonts.scss */
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+    content: "\f255";
+}
+
+/* line 1912, ../cl-sass/_cl-fonts.scss */
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+    content: "\f256";
+}
+
+/* line 1916, ../cl-sass/_cl-fonts.scss */
+.fa-hand-scissors-o:before {
+    content: "\f257";
+}
+
+/* line 1919, ../cl-sass/_cl-fonts.scss */
+.fa-hand-lizard-o:before {
+    content: "\f258";
+}
+
+/* line 1922, ../cl-sass/_cl-fonts.scss */
+.fa-hand-spock-o:before {
+    content: "\f259";
+}
+
+/* line 1925, ../cl-sass/_cl-fonts.scss */
+.fa-hand-pointer-o:before {
+    content: "\f25a";
+}
+
+/* line 1928, ../cl-sass/_cl-fonts.scss */
+.fa-hand-peace-o:before {
+    content: "\f25b";
+}
+
+/* line 1931, ../cl-sass/_cl-fonts.scss */
+.fa-trademark:before {
+    content: "\f25c";
+}
+
+/* line 1934, ../cl-sass/_cl-fonts.scss */
+.fa-registered:before {
+    content: "\f25d";
+}
+
+/* line 1937, ../cl-sass/_cl-fonts.scss */
+.fa-creative-commons:before {
+    content: "\f25e";
+}
+
+/* line 1940, ../cl-sass/_cl-fonts.scss */
+.fa-gg:before {
+    content: "\f260";
+}
+
+/* line 1943, ../cl-sass/_cl-fonts.scss */
+.fa-gg-circle:before {
+    content: "\f261";
+}
+
+/* line 1946, ../cl-sass/_cl-fonts.scss */
+.fa-tripadvisor:before {
+    content: "\f262";
+}
+
+/* line 1949, ../cl-sass/_cl-fonts.scss */
+.fa-odnoklassniki:before {
+    content: "\f263";
+}
+
+/* line 1952, ../cl-sass/_cl-fonts.scss */
+.fa-odnoklassniki-square:before {
+    content: "\f264";
+}
+
+/* line 1955, ../cl-sass/_cl-fonts.scss */
+.fa-get-pocket:before {
+    content: "\f265";
+}
+
+/* line 1958, ../cl-sass/_cl-fonts.scss */
+.fa-wikipedia-w:before {
+    content: "\f266";
+}
+
+/* line 1961, ../cl-sass/_cl-fonts.scss */
+.fa-safari:before {
+    content: "\f267";
+}
+
+/* line 1964, ../cl-sass/_cl-fonts.scss */
+.fa-chrome:before {
+    content: "\f268";
+}
+
+/* line 1967, ../cl-sass/_cl-fonts.scss */
+.fa-firefox:before {
+    content: "\f269";
+}
+
+/* line 1970, ../cl-sass/_cl-fonts.scss */
+.fa-opera:before {
+    content: "\f26a";
+}
+
+/* line 1973, ../cl-sass/_cl-fonts.scss */
+.fa-internet-explorer:before {
+    content: "\f26b";
+}
+
+/* line 1976, ../cl-sass/_cl-fonts.scss */
+.fa-tv:before,
+.fa-television:before {
+    content: "\f26c";
+}
+
+/* line 1980, ../cl-sass/_cl-fonts.scss */
+.fa-contao:before {
+    content: "\f26d";
+}
+
+/* line 1983, ../cl-sass/_cl-fonts.scss */
+.fa-500px:before {
+    content: "\f26e";
+}
+
+/* line 1986, ../cl-sass/_cl-fonts.scss */
+.fa-amazon:before {
+    content: "\f270";
+}
+
+/* line 1989, ../cl-sass/_cl-fonts.scss */
+.fa-calendar-plus-o:before {
+    content: "\f271";
+}
+
+/* line 1992, ../cl-sass/_cl-fonts.scss */
+.fa-calendar-minus-o:before {
+    content: "\f272";
+}
+
+/* line 1995, ../cl-sass/_cl-fonts.scss */
+.fa-calendar-times-o:before {
+    content: "\f273";
+}
+
+/* line 1998, ../cl-sass/_cl-fonts.scss */
+.fa-calendar-check-o:before {
+    content: "\f274";
+}
+
+/* line 2001, ../cl-sass/_cl-fonts.scss */
+.fa-industry:before {
+    content: "\f275";
+}
+
+/* line 2004, ../cl-sass/_cl-fonts.scss */
+.fa-map-pin:before {
+    content: "\f276";
+}
+
+/* line 2007, ../cl-sass/_cl-fonts.scss */
+.fa-map-signs:before {
+    content: "\f277";
+}
+
+/* line 2010, ../cl-sass/_cl-fonts.scss */
+.fa-map-o:before {
+    content: "\f278";
+}
+
+/* line 2013, ../cl-sass/_cl-fonts.scss */
+.fa-map:before {
+    content: "\f279";
+}
+
+/* line 2016, ../cl-sass/_cl-fonts.scss */
+.fa-commenting:before {
+    content: "\f27a";
+}
+
+/* line 2019, ../cl-sass/_cl-fonts.scss */
+.fa-commenting-o:before {
+    content: "\f27b";
+}
+
+/* line 2022, ../cl-sass/_cl-fonts.scss */
+.fa-houzz:before {
+    content: "\f27c";
+}
+
+/* line 2025, ../cl-sass/_cl-fonts.scss */
+.fa-vimeo:before {
+    content: "\f27d";
+}
+
+/* line 2028, ../cl-sass/_cl-fonts.scss */
+.fa-black-tie:before {
+    content: "\f27e";
+}
+
+/* line 2031, ../cl-sass/_cl-fonts.scss */
+.fa-fonticons:before {
+    content: "\f280";
+}
+
+/* line 2034, ../cl-sass/_cl-fonts.scss */
+.fa-reddit-alien:before {
+    content: "\f281";
+}
+
+/* line 2037, ../cl-sass/_cl-fonts.scss */
+.fa-edge:before {
+    content: "\f282";
+}
+
+/* line 2040, ../cl-sass/_cl-fonts.scss */
+.fa-credit-card-alt:before {
+    content: "\f283";
+}
+
+/* line 2043, ../cl-sass/_cl-fonts.scss */
+.fa-codiepie:before {
+    content: "\f284";
+}
+
+/* line 2046, ../cl-sass/_cl-fonts.scss */
+.fa-modx:before {
+    content: "\f285";
+}
+
+/* line 2049, ../cl-sass/_cl-fonts.scss */
+.fa-fort-awesome:before {
+    content: "\f286";
+}
+
+/* line 2052, ../cl-sass/_cl-fonts.scss */
+.fa-usb:before {
+    content: "\f287";
+}
+
+/* line 2055, ../cl-sass/_cl-fonts.scss */
+.fa-product-hunt:before {
+    content: "\f288";
+}
+
+/* line 2058, ../cl-sass/_cl-fonts.scss */
+.fa-mixcloud:before {
+    content: "\f289";
+}
+
+/* line 2061, ../cl-sass/_cl-fonts.scss */
+.fa-scribd:before {
+    content: "\f28a";
+}
+
+/* line 2064, ../cl-sass/_cl-fonts.scss */
+.fa-pause-circle:before {
+    content: "\f28b";
+}
+
+/* line 2067, ../cl-sass/_cl-fonts.scss */
+.fa-pause-circle-o:before {
+    content: "\f28c";
+}
+
+/* line 2070, ../cl-sass/_cl-fonts.scss */
+.fa-stop-circle:before {
+    content: "\f28d";
+}
+
+/* line 2073, ../cl-sass/_cl-fonts.scss */
+.fa-stop-circle-o:before {
+    content: "\f28e";
+}
+
+/* line 2076, ../cl-sass/_cl-fonts.scss */
+.fa-shopping-bag:before {
+    content: "\f290";
+}
+
+/* line 2079, ../cl-sass/_cl-fonts.scss */
+.fa-shopping-basket:before {
+    content: "\f291";
+}
+
+/* line 2082, ../cl-sass/_cl-fonts.scss */
+.fa-hashtag:before {
+    content: "\f292";
+}
+
+/* line 2085, ../cl-sass/_cl-fonts.scss */
+.fa-bluetooth:before {
+    content: "\f293";
+}
+
+/* line 2088, ../cl-sass/_cl-fonts.scss */
+.fa-bluetooth-b:before {
+    content: "\f294";
+}
+
+/* line 2091, ../cl-sass/_cl-fonts.scss */
+.fa-percent:before {
+    content: "\f295";
+}
+
+/* line 2094, ../cl-sass/_cl-fonts.scss */
+.fa-gitlab:before {
+    content: "\f296";
+}
+
+/* line 2097, ../cl-sass/_cl-fonts.scss */
+.fa-wpbeginner:before {
+    content: "\f297";
+}
+
+/* line 2100, ../cl-sass/_cl-fonts.scss */
+.fa-wpforms:before {
+    content: "\f298";
+}
+
+/* line 2103, ../cl-sass/_cl-fonts.scss */
+.fa-envira:before {
+    content: "\f299";
+}
+
+/* line 2106, ../cl-sass/_cl-fonts.scss */
+.fa-universal-access:before {
+    content: "\f29a";
+}
+
+/* line 2109, ../cl-sass/_cl-fonts.scss */
+.fa-wheelchair-alt:before {
+    content: "\f29b";
+}
+
+/* line 2112, ../cl-sass/_cl-fonts.scss */
+.fa-question-circle-o:before {
+    content: "\f29c";
+}
+
+/* line 2115, ../cl-sass/_cl-fonts.scss */
+.fa-blind:before {
+    content: "\f29d";
+}
+
+/* line 2118, ../cl-sass/_cl-fonts.scss */
+.fa-audio-description:before {
+    content: "\f29e";
+}
+
+/* line 2121, ../cl-sass/_cl-fonts.scss */
+.fa-volume-control-phone:before {
+    content: "\f2a0";
+}
+
+/* line 2124, ../cl-sass/_cl-fonts.scss */
+.fa-braille:before {
+    content: "\f2a1";
+}
+
+/* line 2127, ../cl-sass/_cl-fonts.scss */
+.fa-assistive-listening-systems:before {
+    content: "\f2a2";
+}
+
+/* line 2130, ../cl-sass/_cl-fonts.scss */
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+    content: "\f2a3";
+}
+
+/* line 2134, ../cl-sass/_cl-fonts.scss */
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+    content: "\f2a4";
+}
+
+/* line 2139, ../cl-sass/_cl-fonts.scss */
+.fa-glide:before {
+    content: "\f2a5";
+}
+
+/* line 2142, ../cl-sass/_cl-fonts.scss */
+.fa-glide-g:before {
+    content: "\f2a6";
+}
+
+/* line 2145, ../cl-sass/_cl-fonts.scss */
+.fa-signing:before,
+.fa-sign-language:before {
+    content: "\f2a7";
+}
+
+/* line 2149, ../cl-sass/_cl-fonts.scss */
+.fa-low-vision:before {
+    content: "\f2a8";
+}
+
+/* line 2152, ../cl-sass/_cl-fonts.scss */
+.fa-viadeo:before {
+    content: "\f2a9";
+}
+
+/* line 2155, ../cl-sass/_cl-fonts.scss */
+.fa-viadeo-square:before {
+    content: "\f2aa";
+}
+
+/* line 2158, ../cl-sass/_cl-fonts.scss */
+.fa-snapchat:before {
+    content: "\f2ab";
+}
+
+/* line 2161, ../cl-sass/_cl-fonts.scss */
+.fa-snapchat-ghost:before {
+    content: "\f2ac";
+}
+
+/* line 2164, ../cl-sass/_cl-fonts.scss */
+.fa-snapchat-square:before {
+    content: "\f2ad";
+}
+
+/* line 2167, ../cl-sass/_cl-fonts.scss */
+.fa-pied-piper:before {
+    content: "\f2ae";
+}
+
+/* line 2170, ../cl-sass/_cl-fonts.scss */
+.fa-first-order:before {
+    content: "\f2b0";
+}
+
+/* line 2173, ../cl-sass/_cl-fonts.scss */
+.fa-yoast:before {
+    content: "\f2b1";
+}
+
+/* line 2176, ../cl-sass/_cl-fonts.scss */
+.fa-themeisle:before {
+    content: "\f2b2";
+}
+
+/* line 2179, ../cl-sass/_cl-fonts.scss */
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+    content: "\f2b3";
+}
+
+/* line 2183, ../cl-sass/_cl-fonts.scss */
+.fa-fa:before,
+.fa-font-awesome:before {
+    content: "\f2b4";
+}
+
+/* line 2187, ../cl-sass/_cl-fonts.scss */
+.fa-handshake-o:before {
+    content: "\f2b5";
+}
+
+/* line 2190, ../cl-sass/_cl-fonts.scss */
+.fa-envelope-open:before {
+    content: "\f2b6";
+}
+
+/* line 2193, ../cl-sass/_cl-fonts.scss */
+.fa-envelope-open-o:before {
+    content: "\f2b7";
+}
+
+/* line 2196, ../cl-sass/_cl-fonts.scss */
+.fa-linode:before {
+    content: "\f2b8";
+}
+
+/* line 2199, ../cl-sass/_cl-fonts.scss */
+.fa-address-book:before {
+    content: "\f2b9";
+}
+
+/* line 2202, ../cl-sass/_cl-fonts.scss */
+.fa-address-book-o:before {
+    content: "\f2ba";
+}
+
+/* line 2205, ../cl-sass/_cl-fonts.scss */
+.fa-vcard:before,
+.fa-address-card:before {
+    content: "\f2bb";
+}
+
+/* line 2209, ../cl-sass/_cl-fonts.scss */
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+    content: "\f2bc";
+}
+
+/* line 2213, ../cl-sass/_cl-fonts.scss */
+.fa-user-circle:before {
+    content: "\f2bd";
+}
+
+/* line 2216, ../cl-sass/_cl-fonts.scss */
+.fa-user-circle-o:before {
+    content: "\f2be";
+}
+
+/* line 2219, ../cl-sass/_cl-fonts.scss */
+.fa-user-o:before {
+    content: "\f2c0";
+}
+
+/* line 2222, ../cl-sass/_cl-fonts.scss */
+.fa-id-badge:before {
+    content: "\f2c1";
+}
+
+/* line 2225, ../cl-sass/_cl-fonts.scss */
+.fa-drivers-license:before,
+.fa-id-card:before {
+    content: "\f2c2";
+}
+
+/* line 2229, ../cl-sass/_cl-fonts.scss */
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+    content: "\f2c3";
+}
+
+/* line 2233, ../cl-sass/_cl-fonts.scss */
+.fa-quora:before {
+    content: "\f2c4";
+}
+
+/* line 2236, ../cl-sass/_cl-fonts.scss */
+.fa-free-code-camp:before {
+    content: "\f2c5";
+}
+
+/* line 2239, ../cl-sass/_cl-fonts.scss */
+.fa-telegram:before {
+    content: "\f2c6";
+}
+
+/* line 2242, ../cl-sass/_cl-fonts.scss */
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+    content: "\f2c7";
+}
+
+/* line 2247, ../cl-sass/_cl-fonts.scss */
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+    content: "\f2c8";
+}
+
+/* line 2251, ../cl-sass/_cl-fonts.scss */
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+    content: "\f2c9";
+}
+
+/* line 2255, ../cl-sass/_cl-fonts.scss */
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+    content: "\f2ca";
+}
+
+/* line 2259, ../cl-sass/_cl-fonts.scss */
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+    content: "\f2cb";
+}
+
+/* line 2263, ../cl-sass/_cl-fonts.scss */
+.fa-shower:before {
+    content: "\f2cc";
+}
+
+/* line 2266, ../cl-sass/_cl-fonts.scss */
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+    content: "\f2cd";
+}
+
+/* line 2271, ../cl-sass/_cl-fonts.scss */
+.fa-podcast:before {
+    content: "\f2ce";
+}
+
+/* line 2274, ../cl-sass/_cl-fonts.scss */
+.fa-window-maximize:before {
+    content: "\f2d0";
+}
+
+/* line 2277, ../cl-sass/_cl-fonts.scss */
+.fa-window-minimize:before {
+    content: "\f2d1";
+}
+
+/* line 2280, ../cl-sass/_cl-fonts.scss */
+.fa-window-restore:before {
+    content: "\f2d2";
+}
+
+/* line 2283, ../cl-sass/_cl-fonts.scss */
+.fa-times-rectangle:before,
+.fa-window-close:before {
+    content: "\f2d3";
+}
+
+/* line 2287, ../cl-sass/_cl-fonts.scss */
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+    content: "\f2d4";
+}
+
+/* line 2291, ../cl-sass/_cl-fonts.scss */
+.fa-bandcamp:before {
+    content: "\f2d5";
+}
+
+/* line 2294, ../cl-sass/_cl-fonts.scss */
+.fa-grav:before {
+    content: "\f2d6";
+}
+
+/* line 2297, ../cl-sass/_cl-fonts.scss */
+.fa-etsy:before {
+    content: "\f2d7";
+}
+
+/* line 2300, ../cl-sass/_cl-fonts.scss */
+.fa-imdb:before {
+    content: "\f2d8";
+}
+
+/* line 2303, ../cl-sass/_cl-fonts.scss */
+.fa-ravelry:before {
+    content: "\f2d9";
+}
+
+/* line 2306, ../cl-sass/_cl-fonts.scss */
+.fa-eercast:before {
+    content: "\f2da";
+}
+
+/* line 2309, ../cl-sass/_cl-fonts.scss */
+.fa-microchip:before {
+    content: "\f2db";
+}
+
+/* line 2312, ../cl-sass/_cl-fonts.scss */
+.fa-snowflake-o:before {
+    content: "\f2dc";
+}
+
+/* line 2315, ../cl-sass/_cl-fonts.scss */
+.fa-superpowers:before {
+    content: "\f2dd";
+}
+
+/* line 2318, ../cl-sass/_cl-fonts.scss */
+.fa-wpexplorer:before {
+    content: "\f2de";
+}
+
+/* line 2321, ../cl-sass/_cl-fonts.scss */
+.fa-meetup:before {
+    content: "\f2e0";
+}
+
+/* line 2324, ../cl-sass/_cl-fonts.scss */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* line 2334, ../cl-sass/_cl-fonts.scss */
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+/* line 2, ../cl-sass/_cl-main.scss */
+body {
+    background-color: #f1f1f1;
+}
+
+/* line 7, ../cl-sass/_cl-main.scss */
+.cl-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+
+/* line 13, ../cl-sass/_cl-main.scss */
+.cl-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* line 19, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-clear {
+    clear: both;
+}
+
+/* line 25, ../cl-sass/_cl-main.scss */
+.cl-wrapper .header {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-bottom: 15px;
+}
+
+/* line 29, ../cl-sass/_cl-main.scss */
+.cl-wrapper .header div {
+    padding-top: 15px;
+}
+
+/* line 33, ../cl-sass/_cl-main.scss */
+.cl-wrapper .header h1 {
+    margin: 10px 0px 6px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaLTStd';
+    font-size: 40px;
+}
+
+/* line 40, ../cl-sass/_cl-main.scss */
+.cl-wrapper .header p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaLTStd';
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* line 48, ../cl-sass/_cl-main.scss */
+.cl-wrapper .header .font1 {
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+}
+
+/* line 59, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces p {
+    font-family: 'HelveticaNeueLT-Thin';
+    color: #000000;
+    text-align: right;
+    font-size: 17px;
+}
+
+/* line 66, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces p .font1 {
+    color: #5db997;
+}
+
+/* line 71, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces p strong {
+    font-family: 'HelveticaLTStd';
+}
+
+/* line 76, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces img {
+    width: 100%;
+}
+
+/* line 79, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces .left-face {
+    float: left;
+    display: block;
+    width: 480px;
+    height: 158px;
+    background-image: url("../cl-images/kim-face.jpg");
+}
+
+/* line 86, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces .left-face div {
+    float: right;
+    padding: 45px 20px 0px 0px;
+}
+
+/* line 92, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces .right-face {
+    float: right;
+    display: block;
+    width: 480px;
+    height: 158px;
+    background-image: url("../cl-images/wood-face.jpg");
+}
+
+/* line 99, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces .right-face div {
+    float: right;
+    padding: 45px 20px 0px 0px;
+}
+
+/* line 105, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces a {
+    text-decoration: none;
+}
+
+/* line 109, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-faces a:hover {
+    opacity: 0.9;
+}
+
+/* line 116, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #f3f3f3;
+    white-space: nowrap;
+    /*height: 405px;*/
+}
+
+/* line 124, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* line 134, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine h2 {
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 33px;
+    line-height: 35px;
+    color: #0b0404;
+    font-weight: normal;
+}
+
+/* line 144, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine p {
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 16px;
+    line-height: 20px;
+    color: #0b0404;
+}
+
+/* line 153, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine ul {
+    margin: 28px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaNeueLT-Roman';
+    font-size: 19px;
+}
+
+/* line 160, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine ul li {
+    margin: 0px 0px 8px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+}
+
+/* line 165, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* line 169, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine ul li a:hover {
+    text-decoration: underline;
+}
+
+/* line 175, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine ul li i {
+    font-size: 11px;
+}
+
+/* line 182, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine .cl_routine_content {
+    min-width: 384px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 0px 20px 40px;
+}
+
+/* line 188, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine .cl_routine_content .cl-btn-black {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 12px 7px 12px;
+    font-family: 'HelveticaLTStd';
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* line 203, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine .cl_routine_content .cl-btn-black:hover {
+    opacity: 0.9;
+}
+
+/* line 208, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine .cl_routine_img {
+    display: inline-block;
+    background: url("../cl-images/CustomizeRoutine.jpg") no-repeat;
+    background-size: cover;
+    width: 55%;
+    max-width: 522px;
+    vertical-align: middle;
+}
+
+/* line 216, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine .cl_routine_img:after {
+
+}
+
+/* line 222, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine .cl_routine_img_mobile {
+    display: none;
+}
+
+/* line 226, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-routine:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* line 232, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene {
+    padding: 0px 10px 20px 10px;
+}
+
+/* line 235, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene h3 {
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 33px;
+    font-weight: normal;
+    display: table-cell;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+/* line 246, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene h3 strong {
+    font-family: 'HelveticaNeueLT-Roman';
+    font-weight: normal;
+    color: #5db997;
+}
+
+/* line 253, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .cl_bts_table_row {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+/* line 258, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .leftside {
+    display: table-cell;
+    vertical-align: middle;
+    width: 77%;
+    position: relative;
+    max-width: 716px;
+    padding-right: 10px;
+}
+
+/* line 266, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .leftside p {
+    margin: 8px 0px 8px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* line 277, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .leftside a:hover {
+    opacity: 0.9;
+}
+
+/* line 284, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px;
+    min-width: 195px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+}
+
+/* line 297, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside .cl-product {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* line 305, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside h4 {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: normal;
+    color: #46aa8b;
+}
+
+/* line 316, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside p {
+    margin: 0px 0px 5px 0px;
+    padding: 10px 0px 0px 0px;
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: normal;
+}
+
+/* line 324, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside p strong {
+    font-family: 'HelveticaNeueLT-Roman';
+}
+
+/* line 328, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside p .font1 {
+    color: #808080;
+}
+
+/* line 332, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside p .font2 {
+    color: #d8d8d8;
+}
+
+/* line 336, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside p .font3 {
+    color: #5db997;
+}
+
+/* line 340, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside p i {
+    margin-right: 2px;
+    color: #5db997;
+}
+
+/* line 347, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside .cl_btn_container {
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+/* line 353, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside .cl-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 12px 7px 12px;
+    font-family: 'HelveticaLTStd';
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #5db997;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* line 368, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-behindthescene .rightside .cl-btn:hover {
+    opacity: 0.9;
+}
+
+/* line 375, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-gwp {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 447px;
+    text-align: center;
+    background: url("../cl-images/gwp-bg.jpg") no-repeat left top;
+}
+
+/* line 385, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-gwp span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 100;
+    /* fixes overlap error in IE7/8, make sure you have an empty gif */
+    background-image: url("empty.gif");
+}
+
+/* line 400, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-gwp p {
+    margin: 30px 0px 8px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaLTStd';
+    font-size: 16px;
+}
+
+/* line 408, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-gwp h2 {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 34px;
+    font-weight: normal;
+}
+
+/* line 418, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-gwp .cl-badge {
+    position: absolute;
+    display: block;
+    width: 70px;
+    top: 125px;
+    left: 304px;
+    font-family: 'HelveticaNeueLT-Thin';
+    color: #fff;
+    font-size: 17px;
+}
+
+/* line 431, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-gwp .liner {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'HelveticaNeueLT-Roman';
+    font-size: 10px;
+}
+
+/* line 438, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-gwp .cl-btn {
+    display: inline-block;
+    margin: 270px 0px 20px 0px;
+    padding: 8px 21px 8px 21px;
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    text-transform: uppercase;
+}
+
+/* line 449, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-gwp .cl-btn:hover {
+    opacity: 0.8;
+}
+
+/* line 454, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-video-container {
+    position: relative;
+}
+
+/* line 460, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-video-container:after {
+    content: '';
+    display: none;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+/* line 466, ../cl-sass/_cl-main.scss */
+.cl-wrapper #cl-videocover {
+    background: url("../cl-images/cl-videocover.jpg") no-repeat left top;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-size: cover;
+}
+
+/* line 474, ../cl-sass/_cl-main.scss */
+.cl-wrapper #cl-video1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* line 484, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-recommended {
+    background: #fff;
+    position: relative;
+    padding: 15px 0;
+    margin: 0 10px 20px;
+}
+
+/* line 490, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-recommended h3 {
+    padding: 0px 0px 20px 10px;
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 33px;
+    font-weight: normal;
+}
+
+/* line 497, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-recommended .cl-products-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* line 501, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-recommended .cl-products-wrapper .cl-product {
+    float: left;
+    width: 16.66%;
+}
+
+/* line 505, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-recommended .cl-products-wrapper .cl-product a {
+    color: #231f20;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* line 510, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-recommended .cl-products-wrapper .cl-product a:hover {
+    text-decoration: none;
+}
+
+/* line 515, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-recommended .cl-products-wrapper .cl-product span {
+    font-family: 'HelveticaNeueLT-Thin';
+    font-size: 13px;
+    line-height: 15px;
+    display: block;
+    padding: 10px;
+}
+
+/* line 525, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl_bts_h4_mobile {
+    display: none;
+}
+
+/* line 528, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl_bts_p_mobile {
+    display: none;
+}
+
+/* line 531, ../cl-sass/_cl-main.scss */
+.cl-wrapper .cl-products-wrapper-mobile {
+    display: none;
+}
+
+@media (max-width: 949px) {
+    /* line 540, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-routine .cl_routine_content {
+        min-width: 303px;
+        width: 44%;
+        padding-left: 20px;
+    }
+
+    /* line 548, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside h4 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    /* line 552, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl-product {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        max-width: 23px;
+    }
+
+    /* line 561, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-recommended .cl-products-wrapper .cl-product {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* line 571, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-routine {
+        padding: 15px 0px;
+    }
+
+    /* line 573, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-routine .cl_routine_content {
+        text-align: center;
+        min-width: 0px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* line 579, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-routine .cl_routine_img_desktop {
+        display: none;
+    }
+
+    /* line 582, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-routine .cl_routine_img_mobile {
+        display: block;
+        max-width: 522px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* line 590, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene h3 {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding-bottom: 0px;
+        margin-top: 0;
+    }
+
+    /* line 598, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside h4 {
+        text-align: center;
+    }
+
+    /* line 601, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside p {
+        text-align: center;
+    }
+
+    /* line 607, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-recommended h3 {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    /* line 614, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-recommended .cl-products-wrapper .cl-product {
+        text-align: center;
+    }
+}
+
+@media (max-width: 730px) {
+    /* line 625, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .cl_bts_table_row {
+        display: block;
+    }
+
+    /* line 628, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .leftside {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    /* line 634, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside {
+        display: block;
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    /* line 638, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_h4_mobile {
+        display: block;
+    }
+
+    /* line 641, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_h4_desktop {
+        display: none;
+    }
+
+    /* line 644, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_image {
+        display: inline-block;
+    }
+
+    /* line 646, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_image .cl-product {
+        display: inline-block;
+        max-width: 30px;
+    }
+
+    /* line 651, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_mobile_container {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 25px;
+        width: calc(100% - 36px);
+    }
+
+    /* line 656, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_mobile_container .cl_bts_h4_mobile {
+        text-align: left;
+        font-size: 22px;
+        padding-bottom: 5px;
+    }
+
+    /* line 661, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_mobile_container p {
+        padding-top: 5px;
+        text-align: left;
+    }
+
+    /* line 665, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_mobile_container .cl_btn_container {
+        text-align: left;
+    }
+
+    /* line 668, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_mobile_container .cl_bts_p_desktop {
+        display: none;
+    }
+
+    /* line 671, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_mobile_container .cl_bts_p_mobile {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* line 685, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-routine h2 {
+        font-size: 28px;
+    }
+
+    /* line 690, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene h3 {
+        font-size: 28px;
+    }
+
+    /* line 696, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-recommended .cl-products-wrapper .cl-product {
+        width: 50%;
+    }
+
+    /* line 698, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-recommended .cl-products-wrapper .cl-product span {
+        font-size: 12px;
+        height: 64px;
+    }
+
+    /* line 705, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-products-wrapper-desktop {
+        display: none;
+    }
+
+    /* line 708, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-products-wrapper-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 335px) {
+    /* line 715, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-recommended .cl-products-wrapper .cl-product span {
+        height: 75px;
+    }
+
+    /* line 718, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .header h1 {
+        font-size: 32px;
+    }
+
+    /* line 721, ../cl-sass/_cl-main.scss */
+    .cl-wrapper .cl-behindthescene .rightside .cl_bts_mobile_container .cl_bts_h4_mobile {
+        font-size: 20px;
+    }
+}
+</style>
+<div class="cl-wrapper">
+    <div class="header">
+        <div>
+            <p>Clinique For Men</p>
+            <h1>#BehindTheFace</h1>
+            <p class="font1">真男人世界</p>
+        </div>
+    </div>
+    <div class="cl-faces clearfix"><img src="/pub/media/wysiwyg/microsite/clinique/cl-men-img.jpg" alt="Clinique For Men" />
+    </div>
+    <div class="cl-routine">
+        <div class="cl_routine_content">
+            <div class="cl_routine_img cl_routine_img_mobile" style="padding: 0px;"><img src="/pub/media/wysiwyg/microsite/clinique/CustomizeRoutine.jpg"
+                alt="CustomizeRoutine" />
+            </div>
+            <h2>个性化订制健康肌肤<br/>简单 &bull; 纯粹 &bull; 有效</h2>
+            <p>倩碧男士护肤系列<br/>为每个真男人打造健康肌肤</p>
+            <a class="cl-btn-black" href="/brands/clinique/men-s/men-s-3-step.html">立即购买</a></div>
+        <div class="cl_routine_content"><img src="/pub/media/wysiwyg/microsite/clinique/CustomizeRoutine.jpg" alt="CustomizeRoutine" />
+        </div>
+    </div>
+    <div class="cl-behindthescene clearfix">
+        <h3>幕后情景 <strong>Jeremy Jauncey</strong></h3>
+        <div class="cl_bts_table_row">
+            <div class="leftside">
+                <div class="cl-video-container">
+                    <p>
+                        <video width="100%" height="100%" src="/pub/media/wysiwyg/microsite/clinique/BTS_JJ.mp4?rel=0"  controls="controls"></video>
+                    </p>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="cl_bts_right_content" style="padding: 10px;">
+                    <h4 class="cl_bts_h4_desktop">即刻补水高达179%</h4>
+                    <a class="cl_bts_image" href="/clinique-maximum-hydrator-activated-water-gel-concentrate-1-7-fl-oz-50ml-739088.html">
+                        <img class="cl-product" src="/pub/media/wysiwyg/microsite/clinique/NEWMaximumHydratorActivatedWater-GelConcentrate.jpg" alt="NEW Clinique For Men&trade; Maximum Hydrator Activated Water-Gel Concentrate" /> </a>
+                    <div class="cl_bts_mobile_container">
+                        <h4 class="cl_bts_h4_mobile">即刻补水高达179%</h4>
+                        <p class="cl_bts_p_desktop">全新 倩碧男士保湿精华露</p>
+                        <p class="cl_bts_p_mobile">全新 倩碧男士保湿精华露</p>
+                        <div class="cl_btn_container"><a class="cl-btn" href="/clinique-maximum-hydrator-activated-water-gel-concentrate-1-7-fl-oz-50ml-739088.html">立即购买</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl-recommended clearfix">
+        <h3>推荐搭配</h3>
+        <div class="cl-products-wrapper cl-products-wrapper-desktop">
+            <div class="cl-product"><a href="/clinique-for-men-face-wash-67-fl-oz-200-ml-532740.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod1.jpg" alt="Clinique For Men&trade; Face  Wash" /> <span>倩碧男士<br/>液体洁面皂</span> </a></div>
+            <div class="cl-product"><a href="/clinique-for-men-exfoliating-tonic-67-fl-oz-200-ml-534276.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod2.jpg" alt="Clinique For Men&trade; Exfoliating Tonic" /> <span>倩碧男士<br/>净彻爽肤水</span> </a></div>
+            <div class="cl-product"><a  href="/clinique-maximum-hydrator-activated-water-gel-concentrate-1-7-fl-oz-50ml-739088.html"> <img  src="/pub/media/wysiwyg/microsite/clinique/cl-prod3.jpg" alt="Clinique For Men&trade; Maximum Hydrator Activated Water-Gel Concentrate" /> <span>倩碧男士<br/>保湿精华露</span></a></div>
+            <div class="cl-product"><a href="/clinique-for-men-moisturizing-lotion-34-fl-oz-100-ml-532744.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod4.jpg" alt="Clinique For Men&trade; Moisturizing Lotion" /> <span>倩碧男士<br/>卓越润肤乳</span> </a></div>
+            <div class="cl-product"><a href="/clinique-for-men-anti-fatigue-eye-gel-05-fl-oz-15-ml-534283.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod5.jpg" alt="Clinique For Men&trade; Anti-Fatigue Eye Gel" /> <span>倩碧男士<br/>冰爽滚珠眼胶</span></a></div>
+            <div class="cl-product"><a href="/clinique-great-skin-i-ii-3-components-carton-609890.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod6.jpg" alt="Clinique For Men&trade; Great Skin I/II" /> <span>倩碧男士<br/>卓越肌膚套装 I/II</span> </a></div>
+            <div class="clear"></div>
+        </div>
+        <div class="cl-products-wrapper cl-products-wrapper-mobile">
+            <div class="cl-product"><a href="/clinique-for-men-face-wash-67-fl-oz-200-ml-532740.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod1.jpg" alt="Clinique For Men&trade; Face Wash" /> <span>倩碧男士<br/>液体洁面皂</span> </a></div>
+            <div class="cl-product"><a href="/clinique-for-men-exfoliating-tonic-67-fl-oz-200-ml-534276.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod2.jpg" alt="Clinique For Men&trade; Exfoliating Tonic" /> <span>倩碧男士<br/>净彻爽肤水</span> </a></div>
+            <div class="cl-product"><a href="/clinique-maximum-hydrator-activated-water-gel-concentrate-1-7-fl-oz-50ml-739088.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod3.jpg" alt="Clinique For Men&trade; Maximum Hydrator Activated Water-Gel Concentrate" /> <span>倩碧男士<br/>保湿精华露</span> </a></div>
+            <div class="cl-product"><a href="/clinique-for-men-moisturizing-lotion-34-fl-oz-100-ml-532744.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod4.jpg" alt="Clinique For Men&trade; Moisturizing Lotion" /><span>倩碧男士<br/>卓越润肤乳</span> </a></div>
+            <div class="cl-product"><a href="/clinique-for-men-anti-fatigue-eye-gel-05-fl-oz-15-ml-534283.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod5.jpg" alt="Clinique For Men&trade; Anti-Fatigue Eye Gel" /> <span>倩碧男士<br/>冰爽滚珠眼胶</span> </a></div>
+            <div class="cl-product"><a href="/clinique-great-skin-i-ii-3-components-carton-609890.html"> <img src="/pub/media/wysiwyg/microsite/clinique/cl-prod6.jpg" alt="Clinique For Men&trade; Great Skin I/II" /> <span>倩碧男士<br/>卓越肌膚套装 I/II</span></a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!--/cl-wrapper-->

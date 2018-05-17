@@ -1,0 +1,44 @@
+<style>
+    .ddd{
+        -webkit-background-size: cover;background-size: cover;background-position: center center;
+    }
+</style>
+
+Dim pImg = "http://hreleave.kingpower.com/KPstaffPhoto/" & dtg.StaffID & ".jpg"
+mail.Body = @"
+<html lang=""en"">
+<head>
+    <meta content=""text/html; charset=utf-8"" http-equiv=""Content-Type"">
+    <link rel=""stylesheet" href=""https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"" integrity=""sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin=""anonymous"">
+</head>
+<body  class=""center""  style=""background-image:url(http://townhall.kingpower.com/images/bg_townhall.jpg);-webkit-background-size: cover;background-size: cover;background-position: center center;"">
+<div class=""container-fluid"">
+
+    <div class=""row justify-content-md-center header-column"">
+        <h1>Thank you for registration</h1>
+    </div>
+
+    <div class=""container"">
+        <table class=""table-info"" style=""width:100%;height:300px!important;background-color: #ffffffad;"">
+            <tr>
+                <td colspan=""20"">
+                    <div class=""col-12""><h1>You :  " & dtg.AttendEvent & " Successed"</h1></div>
+                    <div class=""col-12">Name: " & dtg.Name & "</div>
+                    <div class=""col-12"">Group: " & dtg.GroupDiv & "</div>
+                    <div class=""col-12"">Location : " & dtg.Location & "</div>
+                    <div class=""col-12"">email : " & dtg.Email & "</div>
+                    <div class=""col-12"">Telephone : " & dtg.PhoneNumber & "</div>
+                    <div class=""col-12"">Register Date : " & dtg.AddDT & "</div>
+                </td>
+                <td colspan=""80"">
+                    <div>
+                        <img src="" & pImg & "">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+</body>"
+SmtpServer.Send(mail)

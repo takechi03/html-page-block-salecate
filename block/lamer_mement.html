@@ -1,0 +1,871 @@
+<!-- lamer_mement th en -->
+<style>
+    .lamer-wrapper .lamer-moment-backgourd-back .product-list-type-bestsell .product_name a {
+        color: #ffffff;
+    }
+    .breadcrumbs{
+        display: none;
+    }
+    .lamer-moment hr {
+        border-top: 1px solid;
+        width: 80%;
+    }
+    .center {
+        text-align: center;
+    }
+
+    .lamer-moment .artical1 {
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        text-align: right;
+        padding: 0 10% 0 39%;
+    }
+    .left {
+        transform: translate(-8em,0);
+    }
+    .right {
+        transform: translate(5em,0);
+    }
+    .font-white {
+        color: #FFF !important;
+    }
+    .lamer-moment-backgourd-back{
+        background:#000;
+    }
+    .lamer-moment-backgourd-back a.btn.btn-default.btn-view-detail {
+        background-color: #333;
+    }
+    .lamer-moment .artical2 {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        text-align: center;
+        padding: 0 71% 0 0%;
+    }
+    .lamer-moment h3 {
+        font-size: 20px;
+        font-weight: normal !important;
+        color: #000;
+    }
+
+    .lamer-moment .artical1 p, .lamer-moment .artical2 p {
+        font-size: 15px !important;
+    }
+    .lamer-moment{margin-top: 20px}
+    .lamer-moment h1 {
+        margin: 20px 0 0;
+        padding: 0;
+        font-family: Times, sans-serif !important;
+        font-size: 50px;
+        font-weight: normal !important;
+        line-height: 50px !important;
+        text-transform: uppercase;
+        color: #000;
+    }
+    .lamer-moment p {
+        font-size: 22px !important;
+        color: #000;
+        font-family: times, serif !important;
+    }
+    div.artical3 ul,div.artical4 ul,div.artical5 ul,div.artical8 ul {
+        list-style-type: disc;
+    }
+    .artical3 {
+        position: absolute;
+        transform: translate(17em,-15em);
+        text-align: center;
+    }
+    .artical3 p,.artical4 p,.artical5 p,.artical51 p{
+        font-size: 15px !important;
+    }
+    .artical3 ul, .artical4 ul,artical51 ul {
+        transform: translate(15px,0);
+        text-align: left;
+    }
+    .artical4 {
+        position: absolute;
+        transform: translate(48em,-27em);
+        text-align: center;
+    }
+    .artical5 {
+        position:absolute;
+        transform: translate(10em,1em);
+    }
+    .artical51 {
+        position: absolute;
+        transform: translate(-5em,27em);
+    }
+    .artical6 {
+        position: absolute;
+        top: 25px;
+    }
+    .artical6 p {
+        font-size: 15px !important;
+    }
+    .artical7 {
+        position: absolute;
+        bottom: 198px;
+        left: 125px;
+        text-align: center;
+    }
+    .artical7 h1 {
+        font-size: 15px;
+        font-style: italic;
+        line-height: 19px !important;
+    }
+    .artical7 p {
+        font-size: 12px !important;
+    }
+    .artical8 {
+        display: inline-flex;
+        padding: 13px 17px 0 21px;
+        transform: translate(3em,-24em);
+    }
+    .artical8 h1 {
+        transform: translate(10px,-12px);
+    }
+    .lamer-moment-backgourd-back img {
+        margin: 5% 0;
+    }
+    div-foodter{height: 900px; vertical-align: middle; transform: translateY(19%);}
+    @media only screen and (max-width:1024px){
+        .lamer-moment .artical1,.lamer-moment .artical2,.lamer-moment .artical3,.lamer-moment .artical4 {
+            position: relative;padding: 0;text-align: center; bottom: 0px;
+        }
+        .lamer-moment-backgourd-back {
+            background: #000;
+            text-align: center;
+        }
+        .right {
+            transform: translate(0);
+            text-align: center;
+            float: none !important;
+        }
+        .left {
+            transform: translate(0);
+            float: none !important;
+            text-align: center;
+        }
+        .lamer-moment-backgourd-back img {
+            margin: 10% 0;
+        }
+        div.artical3 ul, div.artical4 ul, div.artical5 ul, div.artical8 ul {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        .artical3 ul, .artical4 ul, artical51 ul {
+            transform: translate(0);
+            text-align: center;
+        }
+        .artical3, .artical4, .artical5, .artical51 {
+            position: relative;
+            transform: translate(0);
+            text-align: center;
+            float: none !important;
+        }
+        .artical7 {
+            position: absolute;
+            text-align: center;
+            transform: translate(16em,-13em);
+        }
+        .artical6 {
+            position: relative;
+            top: 0;
+            text-align: center;
+        }
+        .lamer-moment-backgourd-back img {
+            margin: 5% 0;
+        }
+        .artical8 {
+            display: inline-flex;
+            padding: 0;
+            transform: none;
+        }
+        div-foodter{    vertical-align: middle;transform: translateY(0);}
+    }
+    @media only screen and (max-width:768px){
+        div-foodter{    vertical-align: middle;transform: translateY(0);}
+        .artical7 {
+            position: absolute;
+            text-align: center;
+            transform: translate(8em,-13em);
+        }
+    }
+    @media only screen and (max-width:425px){
+
+        .lamer-moment .artical1,.lamer-moment .artical2,.lamer-moment .artical3,.lamer-moment .artical4 {
+            position: relative;padding: 0;text-align: center; bottom: 0px;
+        }
+        .right {
+            transform: translate(0);
+        }
+        .left {
+            transform: translate(0);
+        }
+        .lamer-moment-backgourd-back img {
+            margin: 10% 0;
+        }
+        div.artical3 ul, div.artical4 ul, div.artical5 ul, div.artical8 ul {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        .artical3 ul, .artical4 ul, artical51 ul {
+            transform: translate(0);
+            text-align: center;
+        }
+        .artical3,.artical4,.artical5,.artical51 {
+            position: relative;
+            transform: translate(0);
+            text-align: center;
+        }
+        .artical7 {
+            position: relative;
+            text-align: center;
+            transform: translate(0em,-25em);
+            left: 0;
+            top: 0;
+        }
+    }
+</style>
+<div class="lamer-moment">
+    <div class="row">
+        <div class="col-lg-12"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-homepagebanner-d-01.jpg" /></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center">
+                <h1>MOMENTS BY LA MER</h1>
+                <p>Sunrise to sunset. From Paris to Hong Kong.</p>
+                <p>Discover a world of on-the-go rituals.</p>
+                <p>#MyLaMerStory</p>
+                <p><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere.png" /></p>
+                <p>Luxuriate with La Mer’s on-the-go rituals.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            {{block class="Magento\Catalog\Block\Product\ListProduct" template="Magento_Theme::html/categories-landing/la_mer/module/product-list-type-bestsell.phtml" limit="4" category_id="9339"}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center">
+                <p>QUENCH SKIN with</p>
+                <p>The Moisturizing Soft Cream </p>
+                <p>followed by a spritz of The Mist. </p>
+                <br>
+                <p>REPAIR AND REPLENISH </p>
+                <p>with The Lip Balm. </p>
+                <br>
+                <p>ADD MULTI-DIMENSIONAL TRANSFORMATION </p>
+                <p>where you need it most with The Renewal Oil.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 center">
+            <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere-collage-01.jpg" />
+            <div class="artical1">
+                <h3>SUN UP IN ST. BARTS</h3>
+                <p>A sprint — quenched and refreshed by THE MIST. With marine botanicals to instantly hydrate and rebalance skin</p>
+            </div>
+        </div>
+        <div class="col-lg-6 center">
+            <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere-collage-02.jpg" />
+            <div class="artical1">
+                <h3>EN ROUTE IN ROME</h3>
+                <p>Replenish with THE LIP BALM.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 center">
+            <div class="artical01 ">
+                <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere-collage-03.png" />
+                <div class="artical2">
+                    <h3>NIGHT OUT IN NEW YORK</h3>
+                    <p>Pause for a sensorial sensation with THE RENEWAL OIL.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 center">
+            <div class="artical02 ">
+                <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere-collage-04.jpg" />
+                <div class="artical2 " style="margin: 0 0 -10px 0;">
+                    <h3>SUN UP IN ST. BARTS</h3>
+                    <p>A sprint — quenched and refreshed by THE MIST. With marine botanicals to instantly hydrate and rebalance skin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center">
+                <p><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual.png" /></p>
+                <p>Begin your day with the</p>
+                <p>world's most coveted morning ritual.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            {{block class="Magento\Catalog\Block\Product\ListProduct" template="Magento_Theme::html/categories-landing/la_mer/module/product-list-type-bestsell.phtml" limit="4" category_id="9340"}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center">
+                <p>For best results, CLEANSE, TONE AND PREP</p>
+                <p>with your favorite La Mer skincare.</p>
+                <br>
+                <p>Next, visibly TRANSFORM AND DEFINE</p>
+                <p>with The Lifting Contour Serum.</p>
+                <br>
+                <p>DOUBLE THE BENEFITS</p>
+                <p>with The Lifting Eye Serum followed</p>
+                <p>by The Eye Balm Intense.</p>
+                <br>
+                <p>LOCK IN MOISTURE</p>
+                <p>with The NEW Moisturizing Soft Lotion.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual-collage-01.jpg" /></div>
+            <div class="artical3">
+                <h1>6:18</h1>
+                <p>Petit Déjeuner</p>
+                <p>Croissants, coffee and La Mer’s</p>
+                <p>morning ritual to brighten your day.</p>
+                <ul>
+                    <li>The Lifting Contour Serum</li>
+                    <li>The Lifting Eye Serum</li>
+                    <li>The Eye Balm Intense</li>
+                    <li>The NEW Moisturizing Soft Lotion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual-collage-02.png" /></div>
+            <div class="artical4">
+                <h1>11:12</h1>
+                <p>Lavish in La Mer</p>
+                <p>Our signature spa </p>
+                <p>in NYC’s Baccarat Hotel.</p>
+                <ul>
+                    <li>The Treatment Lotion</li>
+                    <li>The Eye Concentrate</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="right"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual-collage-03.png" /></div>
+            <div class="artical5">
+                <h1>12:56</h1>
+                <p>Midday in Capri</p>
+                <p>a devotee treats her friend to her</p>
+                <p>first jar of Crème de la Mer.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="left"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual-collage-04.png" /></div>
+            <div class="artical51">
+                <h1>15:13</h1>
+                <ul>
+                    <li>The Mist</li>
+                    <li>The Lip Balm</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row lamer-moment-backgourd-back">
+        <div class="col-lg-12">
+            <div class="center font-white">
+                <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-evening-ritual-d.png" />
+                <p class="font-white">As the moon rises in different cities around </p>
+                <p class="font-white">the world, an evening of renewal begins.</p>
+                <p>{{block class="Magento\Catalog\Block\Product\ListProduct" template="Magento_Theme::html/categories-landing/la_mer/module/product-list-type-bestsell.phtml" limit="4" category_id="9384"}}</p>
+                <p class="font-white">For best results, CLEANSE, TONE AND PREP</p>
+                <p class="font-white">with your favorite La Mer skincare.</p>
+                <br>
+                <p class="font-white">DOUBLE THE BENEFITS</p>
+                <p class="font-white">with The Lifting Eye Serum followed</p>
+                <p class="font-white">by The Eye Concentrate.</p>
+                <br>
+                <p class="font-white">LOCK IN MOISTURE with Crème de la Mer.</p>
+                <p class="font-white">Once a week, VISIBLY TIGHTEN AND FIRM SKIN with The Lifting and Firming Mask.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-evening-ritual-collage-d-01.png" />
+            <div class="artical6 ">
+                <h1 class="font-white">19:53</h1>
+                <p class="font-white">“IT’S LIKE COCKTAIL HOUR</p>
+                <p class="font-white">IN EVERY BOTTLE</p>
+                <p class="font-white">OF THE RENEWAL OIL.”</p>
+            </div>
+            <div class="artical7 font-white">
+                <h1 class="font-white">Bespoke Pampering</h1>
+                <p class="font-white">As the moon filters through</p>
+                <p class="font-white">your window in Hong Kong, La Mer’s</p>
+                <p class="font-white">evening ritual begins.</p>
+            </div>
+        </div>
+        <div class="col-lg-6 div-foodter">
+            <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-evening-ritual-collage-02.png" />
+            <div class="artical8 font-white" >
+                <ul>
+                    <li class="font-white">The Lifting and Firming Mask</li>
+                    <li class="font-white">Genaissance de la Mer The Serum Essence</li>
+                    <li class="font-white">Crème de la Mer</li>
+                </ul>
+                <h1 class="font-white">23:08</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- lamer_mement th en -->
+
+<!-- lamer_mement cn -->
+<style>
+    .lamer-wrapper .lamer-moment-backgourd-back .product-list-type-bestsell .product_name a {
+        color: #ffffff;
+    }
+    .breadcrumbs{
+        display: none;
+    }
+    .lamer-moment hr {
+        border-top: 1px solid;
+        width: 80%;
+    }
+    .center {
+        text-align: center;
+    }
+
+    .lamer-moment .artical1 {
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        text-align: right;
+        padding: 0 10% 0 39%;
+    }
+    .left {
+        transform: translate(-8em,0);
+    }
+    .right {
+        transform: translate(5em,0);
+    }
+    .font-white {
+        color: #FFF !important;
+    }
+    .lamer-moment-backgourd-back{
+        background:#000;
+    }
+    .lamer-moment-backgourd-back a.btn.btn-default.btn-view-detail {
+        background-color: #333;
+    }
+    .lamer-moment .artical2 {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        text-align: center;
+        padding: 0 71% 0 0%;
+    }
+    .lamer-moment h3 {
+        font-size: 20px;
+        font-weight: normal !important;
+        color: #000;
+    }
+
+    .lamer-moment .artical1 p, .lamer-moment .artical2 p {
+        font-size: 15px !important;
+    }
+    .lamer-moment{margin-top: 20px}
+    .lamer-moment h1 {
+        margin: 20px 0 0;
+        padding: 0;
+        font-family: Times, sans-serif !important;
+        font-size: 50px;
+        font-weight: normal !important;
+        line-height: 50px !important;
+        text-transform: uppercase;
+        color: #000;
+    }
+    .lamer-moment p {
+        font-size: 22px !important;
+        color: #000;
+        font-family: times, serif !important;
+    }
+    div.artical3 ul,div.artical4 ul,div.artical5 ul,div.artical8 ul {
+        list-style-type: disc;
+    }
+    .artical3 {
+        position: absolute;
+        transform: translate(17em,-15em);
+        text-align: center;
+    }
+    .artical3 p,.artical4 p,.artical5 p,.artical51 p{
+        font-size: 15px !important;
+    }
+    .artical3 ul, .artical4 ul,artical51 ul {
+        transform: translate(15px,0);
+        text-align: left;
+    }
+    .artical4 {
+        position: absolute;
+        transform: translate(48em,-27em);
+        text-align: center;
+    }
+    .artical5 {
+        position:absolute;
+        transform: translate(10em,1em);
+    }
+    .artical51 {
+        position: absolute;
+        transform: translate(-5em,27em);
+    }
+    .artical6 {
+        position: absolute;
+        top: 25px;
+    }
+    .artical6 p {
+        font-size: 15px !important;
+    }
+    .artical7 {
+        position: absolute;
+        bottom: 198px;
+        left: 125px;
+        text-align: center;
+    }
+    .artical7 h1 {
+        font-size: 15px;
+        font-style: italic;
+        line-height: 19px !important;
+    }
+    .artical7 p {
+        font-size: 12px !important;
+    }
+    .artical8 {
+        display: inline-flex;
+        padding: 13px 17px 0 21px;
+        transform: translate(3em,-24em);
+    }
+    .artical8 h1 {
+        transform: translate(10px,-12px);
+    }
+    .lamer-moment-backgourd-back img {
+        margin: 5% 0;
+    }
+    div-foodter{height: 900px; vertical-align: middle; transform: translateY(19%);}
+    @media only screen and (max-width:1024px){
+        .lamer-moment .artical1,.lamer-moment .artical2,.lamer-moment .artical3,.lamer-moment .artical4 {
+            position: relative;padding: 0;text-align: center; bottom: 0px;
+        }
+        .lamer-moment-backgourd-back {
+            background: #000;
+            text-align: center;
+        }
+        .right {
+            transform: translate(0);
+            text-align: center;
+            float: none !important;
+        }
+        .left {
+            transform: translate(0);
+            float: none !important;
+            text-align: center;
+        }
+        .lamer-moment-backgourd-back img {
+            margin: 10% 0;
+        }
+        div.artical3 ul, div.artical4 ul, div.artical5 ul, div.artical8 ul {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        .artical3 ul, .artical4 ul, artical51 ul {
+            transform: translate(0);
+            text-align: center;
+        }
+        .artical3, .artical4, .artical5, .artical51 {
+            position: relative;
+            transform: translate(0);
+            text-align: center;
+            float: none !important;
+        }
+        .artical7 {
+            position: absolute;
+            text-align: center;
+            transform: translate(16em,-13em);
+        }
+        .artical6 {
+            position: relative;
+            top: 0;
+            text-align: center;
+        }
+        .lamer-moment-backgourd-back img {
+            margin: 5% 0;
+        }
+        .artical8 {
+            display: inline-flex;
+            padding: 0;
+            transform: none;
+        }
+        div-foodter{    vertical-align: middle;transform: translateY(0);}
+    }
+    @media only screen and (max-width:768px){
+        div-foodter{    vertical-align: middle;transform: translateY(0);}
+        .artical7 {
+            position: absolute;
+            text-align: center;
+            transform: translate(8em,-13em);
+        }
+    }
+    @media only screen and (max-width:425px){
+
+        .lamer-moment .artical1,.lamer-moment .artical2,.lamer-moment .artical3,.lamer-moment .artical4 {
+            position: relative;padding: 0;text-align: center; bottom: 0px;
+        }
+        .right {
+            transform: translate(0);
+        }
+        .left {
+            transform: translate(0);
+        }
+        .lamer-moment-backgourd-back img {
+            margin: 10% 0;
+        }
+        div.artical3 ul, div.artical4 ul, div.artical5 ul, div.artical8 ul {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        .artical3 ul, .artical4 ul, artical51 ul {
+            transform: translate(0);
+            text-align: center;
+        }
+        .artical3,.artical4,.artical5,.artical51 {
+            position: relative;
+            transform: translate(0);
+            text-align: center;
+        }
+        .artical7 {
+            position: relative;
+            text-align: center;
+            transform: translate(0em,-25em);
+            left: 0;
+            top: 0;
+        }
+    }
+</style>
+<div class="lamer-moment">
+    <div class="row">
+        <div class="col-lg-12"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-homepagebanner-d-01.jpg" /></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center">
+                <h1>MOMENTS BY LA MER</h1>
+                <p>Sunrise to sunset. From Paris to Hong Kong.</p>
+                <p>Discover a world of on-the-go rituals.</p>
+                <p>#MyLaMerStory</p>
+                <p><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere.png" /></p>
+                <p>Luxuriate with La Mer’s on-the-go rituals.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            {{block class="Magento\Catalog\Block\Product\ListProduct" template="Magento_Theme::html/categories-landing/la_mer/module/product-list-type-bestsell.phtml" limit="4" category_id="9339"}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center">
+                <p>QUENCH SKIN with</p>
+                <p>The Moisturizing Soft Cream </p>
+                <p>followed by a spritz of The Mist. </p>
+                <br>
+                <p>REPAIR AND REPLENISH </p>
+                <p>with The Lip Balm. </p>
+                <br>
+                <p>ADD MULTI-DIMENSIONAL TRANSFORMATION </p>
+                <p>where you need it most with The Renewal Oil.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 center">
+            <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere-collage-01.jpg" />
+            <div class="artical1">
+                <h3>SUN UP IN ST. BARTS</h3>
+                <p>A sprint — quenched and refreshed by THE MIST. With marine botanicals to instantly hydrate and rebalance skin</p>
+            </div>
+        </div>
+        <div class="col-lg-6 center">
+            <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere-collage-02.jpg" />
+            <div class="artical1">
+                <h3>EN ROUTE IN ROME</h3>
+                <p>Replenish with THE LIP BALM.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 center">
+            <div class="artical01 ">
+                <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere-collage-03.png" />
+                <div class="artical2">
+                    <h3>NIGHT OUT IN NEW YORK</h3>
+                    <p>Pause for a sensorial sensation with THE RENEWAL OIL.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 center">
+            <div class="artical02 ">
+                <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-anytime-anywhere-collage-04.jpg" />
+                <div class="artical2 " style="margin: 0 0 -10px 0;">
+                    <h3>SUN UP IN ST. BARTS</h3>
+                    <p>A sprint — quenched and refreshed by THE MIST. With marine botanicals to instantly hydrate and rebalance skin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center">
+                <p><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual.png" /></p>
+                <p>Begin your day with the</p>
+                <p>world's most coveted morning ritual.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            {{block class="Magento\Catalog\Block\Product\ListProduct" template="Magento_Theme::html/categories-landing/la_mer/module/product-list-type-bestsell.phtml" limit="4" category_id="9340"}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center">
+                <p>For best results, CLEANSE, TONE AND PREP</p>
+                <p>with your favorite La Mer skincare.</p>
+                <br>
+                <p>Next, visibly TRANSFORM AND DEFINE</p>
+                <p>with The Lifting Contour Serum.</p>
+                <br>
+                <p>DOUBLE THE BENEFITS</p>
+                <p>with The Lifting Eye Serum followed</p>
+                <p>by The Eye Balm Intense.</p>
+                <br>
+                <p>LOCK IN MOISTURE</p>
+                <p>with The NEW Moisturizing Soft Lotion.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual-collage-01.jpg" /></div>
+            <div class="artical3">
+                <h1>6:18</h1>
+                <p>Petit Déjeuner</p>
+                <p>Croissants, coffee and La Mer’s</p>
+                <p>morning ritual to brighten your day.</p>
+                <ul>
+                    <li>The Lifting Contour Serum</li>
+                    <li>The Lifting Eye Serum</li>
+                    <li>The Eye Balm Intense</li>
+                    <li>The NEW Moisturizing Soft Lotion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="center"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual-collage-02.png" /></div>
+            <div class="artical4">
+                <h1>11:12</h1>
+                <p>Lavish in La Mer</p>
+                <p>Our signature spa </p>
+                <p>in NYC’s Baccarat Hotel.</p>
+                <ul>
+                    <li>The Treatment Lotion</li>
+                    <li>The Eye Concentrate</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="right"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual-collage-03.png" /></div>
+            <div class="artical5">
+                <h1>12:56</h1>
+                <p>Midday in Capri</p>
+                <p>a devotee treats her friend to her</p>
+                <p>first jar of Crème de la Mer.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="left"><img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-morning-ritual-collage-04.png" /></div>
+            <div class="artical51">
+                <h1>15:13</h1>
+                <ul>
+                    <li>The Mist</li>
+                    <li>The Lip Balm</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row lamer-moment-backgourd-back">
+        <div class="col-lg-12">
+            <div class="center font-white">
+                <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-evening-ritual-d.png" />
+                <p class="font-white">As the moon rises in different cities around </p>
+                <p class="font-white">the world, an evening of renewal begins.</p>
+                <p>{{block class="Magento\Catalog\Block\Product\ListProduct" template="Magento_Theme::html/categories-landing/la_mer/module/product-list-type-bestsell.phtml" limit="4" category_id="9384"}}</p>
+                <p class="font-white">For best results, CLEANSE, TONE AND PREP</p>
+                <p class="font-white">with your favorite La Mer skincare.</p>
+                <br>
+                <p class="font-white">DOUBLE THE BENEFITS</p>
+                <p class="font-white">with The Lifting Eye Serum followed</p>
+                <p class="font-white">by The Eye Concentrate.</p>
+                <br>
+                <p class="font-white">LOCK IN MOISTURE with Crème de la Mer.</p>
+                <p class="font-white">Once a week, VISIBLY TIGHTEN AND FIRM SKIN with The Lifting and Firming Mask.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-evening-ritual-collage-d-01.png" />
+            <div class="artical6 ">
+                <h1 class="font-white">19:53</h1>
+                <p class="font-white">“IT’S LIKE COCKTAIL HOUR</p>
+                <p class="font-white">IN EVERY BOTTLE</p>
+                <p class="font-white">OF THE RENEWAL OIL.”</p>
+            </div>
+            <div class="artical7 font-white">
+                <h1 class="font-white">Bespoke Pampering</h1>
+                <p class="font-white">As the moon filters through</p>
+                <p class="font-white">your window in Hong Kong, La Mer’s</p>
+                <p class="font-white">evening ritual begins.</p>
+            </div>
+        </div>
+        <div class="col-lg-6 div-foodter">
+            <img src="/pub/media/wysiwyg/microsite/lamer/lamer-moment/lm-24-7-evening-ritual-collage-02.png" />
+            <div class="artical8 font-white" >
+                <ul>
+                    <li class="font-white">The Lifting and Firming Mask</li>
+                    <li class="font-white">Genaissance de la Mer The Serum Essence</li>
+                    <li class="font-white">Crème de la Mer</li>
+                </ul>
+                <h1 class="font-white">23:08</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- lamer_mement cn -->

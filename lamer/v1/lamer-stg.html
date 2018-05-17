@@ -1,0 +1,631 @@
+<style>
+.breadcrumbs {
+    display: none;
+}
+.color-white{
+    color: #FFF !important;
+}
+.padding-20px {
+    padding: 10px;
+}
+.videoWrapper {
+    position: relative;
+    height: 550px;
+    margin: 0 0 0 0;
+    display: inline-block;
+    width: 100%;
+}
+#list-product2 .col-lg-6.col-md-6.col-sm-6 h4 {
+    height: 60px;
+}
+#list-product2 .col-lg-6.col-md-6.col-sm-6 {
+    padding: 20px;
+    text-align: center;
+}
+.video-control-play:hover,
+.video-control-pause:hover {
+    background-position: 0 -174px;
+}
+.backgourd-back{
+    background-color: #000
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 640px;
+}
+
+#list-product .slick-slide h4 {
+    border-top: 1px solid;
+    padding: 10px 0 0 0;
+}
+
+#list-product .slick-slide a {
+    text-align: center;
+}
+
+.content-a {
+    background-color: #FFF;
+    margin: 0 0 20px 0;
+}
+
+#yt-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#yt-player {
+    position: absolute;
+    pointer-events: none;
+}
+
+.template-content.type-home,
+.template-content.type-a,
+.template-content.type-b,
+.template-content.type-diversity,
+.template-content.type-careers {
+    overflow: auto;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+}
+
+
+
+.template-content {
+    position: relative;
+    opacity: 0;
+    z-index: 1;
+}
+
+.template-content.type-home .video-control-play,
+.template-content.type-home .video-control-pause {
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.video-control-play,
+.video-control-pause {
+    width: 120px;
+    padding: 10px;
+    color: #FFFFFF;
+    border: 2px double #FFF;
+    cursor: pointer;
+}
+
+.template-content.type-home .text-copy {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-copy,
+.text-copy-small {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 0.875em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+.template-content.type-home,
+.template-content.type-a,
+.template-content.type-b,
+.template-content.type-diversity,
+.template-content.type-careers {
+    overflow: auto;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    left: 0;
+}
+
+.template-content {
+    position: relative;
+    opacity: 0;
+    z-index: 1;
+}
+
+.template-img-background-container {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.template-img-background-footer {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.entry-image1.inview {
+    overflow: hidden;
+    position: relative;
+}
+
+.template-content h2 {
+    margin: -6px 0;
+    font-size: 42px;
+    color: #FFF;
+    font-weight: normal !important;
+}
+
+#video {
+    z-index: 99;
+    position: relative;
+    display: none;
+}
+
+.picimg {
+    width: 100%;
+}
+
+.detail {
+    color: #fff;
+    font-style: italic;
+}
+
+.header-story {
+    font-size: 40px;
+    font-weight: normal !important;
+    color: #000;
+}
+
+.center-story {
+    padding: 25% 5%;
+}
+
+.content-story {
+    text-align: center;
+    top: 0;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.thestory {
+    margin: 5% 0;
+    color: #000;
+}
+
+.img-slide {
+    position: absolute;
+    /* display: inline-block; */
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+}
+
+.detail-footer1 {
+    font-style: italic;
+    color: #000;
+}
+
+.detail-footer2 {
+    color: #000;
+}
+
+.top-footer h2 {
+    color: #000;
+}
+
+@media (min-width: 1280px) {
+    .product-list-items > .col-md-3{
+        width: 25% !important;
+    }
+    .text-copy,
+    .text-copy-small {
+        font-size: 1.0625em;
+    }
+    .title {
+        font-size: 3em !important;
+        color: #FFF;
+    }
+    .title2 {
+        font-size: 2em !important;
+        color: #000;
+    }
+
+    .detail-slide {
+        color: #FFF;
+        font-style: italic;
+    }
+    .detail-slide2 {
+        color: #000;
+        font-style: italic;
+    }
+    #list-product .slick-slide {
+        padding: 1em;
+    }
+    .textures {
+        text-align: center;
+        padding: 10em 20em;
+    }
+    .top-footer {
+        margin: 20% 0 0 !important;
+    }
+}
+
+@media (min-width:769px) {
+    .product-list-items > .col-md-3{
+        width: 25% !important;
+    }
+    .text-right {
+        text-align: right;
+    }
+    div#slide{margin:20px 0 0 0}
+    .template-img-background-container {
+        background: url('http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-header-bg-desktop.jpg') center center;
+    }
+    .template-img-background-footer {
+        background: url('http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section6-bg-desktop.jpg') center center;
+    }
+    .top20 {
+        margin: 20% 0 0;
+    }
+    .entry-image1.inview {
+        padding: 13em;
+    }
+    .title {
+        font-size: 3em !important;
+        color: #FFF;
+    }
+    .title2 {
+        font-size: 2em !important;
+        color: #000;
+    }
+
+    .detail-slide {
+        color: #FFF;
+        font-style: italic;
+    }
+    .detail-slide2 {
+        color: #000;
+        font-style: italic;
+    }
+    #list-product .slick-slide {
+        padding: 1em;
+    }
+    .textures {
+        text-align: center;
+        padding: 5em 20em;
+    }
+    .top-footer {
+        margin: 20% 0 0 !important;
+    }
+    div#list-product {
+        margin: 20px 0;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .template-img-background-container {
+        background: url('http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-header-bg-mobile.jpg') center center;
+    }
+    .template-img-background-footer {
+        background: url('http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section6-bg-mobile.jpg') center center;
+    }
+    .top20 {
+        margin: 46% 0 0;
+    }
+    .entry-image1.inview {
+        padding: 9em;
+    }
+    .textures {
+        text-align: center;
+        padding: 10em 5em;
+    }
+    .title {
+        font-size: 2em !important;
+        color: #FFF;
+    }
+    .title2 {
+        font-size: 2em !important;
+        color: #000;
+    }
+    div#slide .slick-slide .entry-image1 {
+        height: 400px;
+    }
+    .detail-slide {
+        color: #FFF;
+        font-style: italic;
+    }
+    .detail-slide2 {
+        color: #000;
+        font-style: italic;
+    }
+    #list-product .slick-slide {
+        padding: 1em;
+    }
+    .top-footer {
+        margin: 20% 0 0 !important;
+    }
+}
+
+@media(max-width:425px) {
+    .top20 {
+        margin: 84% 0 0 !important;
+    }
+    .entry-image1.inview {
+        padding: 1em !important;
+    }
+    .title {
+        font-size: 2em !important;
+        color: #FFF;
+    }
+    .title2 {
+        font-size: 2em !important;
+        color: #000;
+    }
+    div#slide .slick-slide .entry-image1 {
+        height: 218px;
+    }
+    .textures {
+        text-align: center;
+        padding: 1em 5em;
+    }
+    .detail-slide {
+        color: #FFF;
+        font-style: italic;
+    }
+    .detail-slide2 {
+        color: #000;
+        font-style: italic;
+    }
+    #list-product .slick-slide {
+        padding: 6em;
+    }
+    .top-footer {
+        margin: 20% 0 0 !important;
+    }
+}
+
+@media(max-width:320px) {
+    .entry-image1.inview {
+        padding: 1em;
+    }
+    .title {
+        font-size: 2em !important;
+        color: #FFF;
+    }
+    .title2 {
+        font-size: 2em !important;
+        color: #000;
+    }
+    .textures {
+        text-align: center;
+        padding: 1em 5em;
+    }
+    .detail-slide {
+        color: #FFF;
+        font-style: italic;
+    }
+    .detail-slide2 {
+        color: #000;
+        font-style: italic;
+    }
+    #list-product .slick-slide {
+        padding: 4em;
+    }
+    .top-footer {
+        margin: 20% 0 0 !important;
+    }
+}
+</style>
+<div class="content-a">
+    <div class="wrapper-a">
+        <div class="videoWrapper">
+            <div>
+                <div class="template-img-background-container"></div>
+                <div id="yt-container"><iframe id="video" src="https://www.youtube.com/embed/Egydokk01D4?rel=0" width="320" height="240" frameborder="0"></iframe></div>
+                <div class="top20 col-lg-6 col-md-6 col-sm-12"><article class="template-content type-home" style="opacity: 1; visibility: visible; text-align: center; display: inline-block;">
+                    <h2>FROM SEA</h2>
+                    <h2>TO SKIN</h2>
+                    <div class="detail">Discover the secret behind Cr&egrave;me de la Mer and the healing energies of the Miracle Broth&trade;.</div>
+                    <div id="video-control-ui" class="video-control-play">Watch the Film</div>
+                </article></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12"><a href="#"><img class="picimg" src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section2-img.jpg" /></a></div>
+    <div class="col-lg-6 col-md-6 col-sm-12 content-story">
+        <div class="center-story">
+            <h2 class="header-story">THE STORY</h2>
+            <div class="thestory">La Mer&rsquo;s journey began when Dr. Max Huber suffered burns in an experiment gone awry and set out to create his own destiny. Physicist by day, stargazer and dreamer by night, he hoped to unlock the healing power of the sea he held so dear.</div>
+            <div class="thestory">Inspired by the oceanic world, Huber fermented nutrient-rich sea kelp with other natural ingredients. 12 years and 6,000 experiments later, Cr&egrave;me de la Mer was born &ndash; and Huber&rsquo;s skin visibly restored.</div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div id="slide">
+        <div>
+            <div class="entry-image1 inview center">
+                <div class="img-slide"><a tabindex="0" href="#"><img src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section3-img1.jpg" /></a></div>
+                <div class="title">THE ART OF FERMENTATION</div>
+                <div class="detail-slide">Our Pacific sea kelp is combined with calcium, magnesium, potassium, iron, and lecithin, Vitamins C, E and B12, along with oils of citrus, eucalyptus, wheat germ, alfalfa and sunflower and then put through a bio-fermentation process that lasts three months. Like alchemy, the resulting Miracle Broth&trade; is more than the sum of its parts &ndash; it&rsquo;s as alive as the sea itself. This Miracle Broth&trade; is at the heart of every La Mer product and the secret behind the coveted Cr&egrave;me de la Mer.</div>
+            </div>
+        </div>
+        <div>
+            <div class="entry-image1 inview center">
+                <div class="img-slide"><a tabindex="0" href="#"><img src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section3-img2.jpg" /></a></div>
+                <div class="title">THE JOURNEY</div>
+                <div class="detail-slide">Dr. Huber believed that kelp held the multitudes of the sea&rsquo;s energies within its cells and went to great lengths to unlock this power. In honor of his wishes, our sea kelp is still hand-harvested twice a year and shipped on ice to the Dr. Max Huber Research Laboratories. It&rsquo;s these details that make the difference.</div>
+            </div>
+        </div>
+        <div>
+            <div class="entry-image1 inview center">
+                <div class="img-slide"><a tabindex="0" href="#"><img src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section3-img3.jpg" /></a></div>
+                <div class="title">THE MIRACLE BROTH</div>
+                <div class="detail-slide">Today, we utilize the same processes perfected by Dr. Huber many moons ago. A multi-step, carefully crafted system ensures that each jar of Cr&egrave;me de la Mer is packed with the same potential as the original Miracle Broth&trade;.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row backgourd-back">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="center-story ">
+            <h2 class="header-story color-white">FROM SEA TO SKIN</h2>
+            <div class="thestory color-white">The iconic Cr&egrave;me de la Mer renews and restores, immersing your skin in moisture and the healing energies of our Miracle Broth&trade;. Glowing with youthful radiance.</div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 content-story text-right padding-20px"><a href="#"><img src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section4-img.jpg" /></a></div>
+</div>
+<div class="row">
+    <div class="col-lg-12 textures">
+        <div class="title2">TEXTURES TO TRANSFORM</div>
+        <div class="detail-slide2">A collection of beautiful textures &ndash; from the riches of the original icon to the fluidity of a luxurious lotion with a satin finish &ndash; creates the possibility of transformation for a lifetime.</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+        <div id="list-product2">
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href="#"> <img class="picimg" src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section5-img1.jpg" /></a>
+                <h4>CR&Egrave;ME DE LA MER</h4>
+                <p class="product-detail">Ultra-rich. Dewy.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href="#"> <img class="picimg" src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section5-img2.jpg" /></a>
+                <h4>THE MOISTURIZING SOFT CREAM</h4>
+                <p class="product-detail">Weightless. Luminous.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href="#"> <img class="picimg" src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section5-img3.jpg" /></a>
+                <h4>THE MOISTURIZING GEL CREAM</h4>
+                <p class="product-detail">Utra-light. Velvet.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href="#"> <img class="picimg" src="http://www.kingpower.com/pub/media/wysiwyg/microsite/lamer/lm-brandstory-section5-img4.jpg" /></a>
+                <h4>THE MOISTURIZING SOFT LOTION</h4>
+                <p class="product-detail">Ultra-weightless. Satin.</p>
+            </div>
+        </div>
+    </div>
+    <!--{{block class="Magento\Catalog\Block\Product\ListProduct" template="Magento_Theme::html/categories-landing/la_mer/module/product-list-type-experience.phtml" limit="4" category_id="8520"}} -->
+    <div class="content-a">
+        <div class="wrapper-a">
+            <div class="videoWrapper">
+                <div>
+                    <div class="template-img-background-footer"></div>
+                    <div class="top-footer col-lg-6 col-md-6 col-sm-12"><article class="template-content type-home" style="opacity: 1; visibility: visible; text-align: center; display: inline-block;">
+                        <h2>THE ESSENTIALS</h2>
+                        <div class="detail-footer1">FROM THE WORLD OF LA MER</div>
+                        <div class="detail-footer2">Customize your La Mer ritual. Essentials include the Treatment Lotion, followed by a serum, eye treatment and moisturizer of your choice.</div>
+                    </article></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    require(
+        ['jquery'],
+        function ($) {
+            $('#video-control-ui').on('click', function (ev) {
+                $("#video").css("display", "block");
+                $("#video")[0].src += "&autoplay=1";
+                this.style.display = "none";
+                ev.preventDefault();
+
+            });
+        });
+</script>
+    <script type="text/javascript">
+    require(['jquery', 'magiccart/slick'], function ($) {
+        var options = {
+            autoplay: true,
+            autoplaySpeed: 7000,
+            fade: true,
+            cssEase: 'linear',
+            arrows: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: false,
+            centerPadding: '60px',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerPadding: '60px',
+                        centerMode: true
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        arrows: false,
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerPadding: '60px',
+                        centerMode: true
+                    }
+                }]
+        };
+        var optionsListproduct = {
+            arrows: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            cssEase: 'linear',
+            centerMode: false,
+            centerPadding: '60px',
+            responsive: [
+                {
+                    breakpoint: 1448,
+                    settings: {
+                        unslick: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: true,
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerPadding: '60px',
+                        centerMode: false
+                    }
+                }
+            ]
+        };
+        $(function () {
+            $('#slide').slick(options);
+            $('#list-product').slick(optionsListproduct);
+        });
+    });
+</script>
+</div>
