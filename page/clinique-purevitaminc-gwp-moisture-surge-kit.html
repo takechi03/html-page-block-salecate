@@ -1,47 +1,514 @@
-<div style="margin: auto;">
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <figure>
-                        <img style="width: 100%;" src="/pub/media/wysiwyg/microsite/clinique/cl-1.jpg" />
-                    </figure>
+<style>
+    .cl-promo-wrapper {
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        overflow: hidden;
+        font-family: 'KingPowerHeadline-Bold' !important;
+    }
+
+    /* line 20, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-btn-big {
+        width: 301px;
+        height: 61px;
+        background: #000;
+        color: #fff;
+        padding-top: 10px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 25px;
+        line-height: 25px;
+        padding-top: 19px;
+    }
+
+    /* line 34, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-btn-big:hover {
+        text-decoration: none;
+    }
+
+    /* line 39, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-clear {
+        clear: both;
+    }
+
+    /* line 43, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-inline {
+        display: inline-block;
+    }
+
+    /* line 47, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-logo {
+        position: absolute;
+        top: 40px;
+        left: 61.5%;
+    }
+
+    /* line 53, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s1 {
+        background: url(/pub/media/wysiwyg/microsite/clinique/2018-06/cl-model.jpg) no-repeat center top #fed2ce;
+        min-height: 1080px;
+        text-align: center;
+        position: relative;
+    }
+
+    /* line 61, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s1 .cl-model-name {
+        position: absolute;
+        top: 20%;
+        left: 68%;
+    }
+
+    /* line 67, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod-wrap {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(254, 210, 206, 0.8);
+    }
+
+    /* line 74, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 20px 20px 0;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    /* line 81, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod .cl-overlay-prod-img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+
+    /* line 86, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod .cl-overlay-prod-text {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    /* line 97, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s2 .cl-title {
+        background: url(/pub/media/wysiwyg/microsite/clinique/2018-06/cl-s2-title.png) no-repeat center bottom #fed2ce;
+        height: 160px;
+        text-align: center;
+        font-size: 63px;
+        font-family: 'KingPowerHeadline-Bold' !important;
+    }
+    .cl-promo-wrapper .cl-promo-s2 .cl-title span{
+        font-size: 50%;
+    }
+
+    /* line 106, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s2 .cl-product-wrap {
+        background: url(/pub/media/wysiwyg/microsite/clinique/2018-06/cl-s2-bg.jpg) no-repeat center top #fed2ce;
+    }
+
+    /* line 110, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s2-seperator {
+        background: url(/pub/media/wysiwyg/microsite/clinique/2018-06/cl-s2-seperator.png) no-repeat center top;
+        width: 100%;
+        height: 47px;
+    }
+
+    /* line 115, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s3 {
+        background: #f7f7f7;
+    }
+
+    /* line 120, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-promo-s3 .cl-product {
+        padding: 40px 0;
+    }
+
+    /* line 124, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product {
+        padding: 20px 0;
+        max-width: 850px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    /* line 130, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product .cl-col {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+
+    /* line 136, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product img {
+        max-width: 100%;
+    }
+
+    /* line 140, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product .cl-product-name {
+        font-size: 30px;
+        line-height: 38px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    /* line 146, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product .cl-product-size {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    /* line 150, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product .cl-product-title {
+        font-size: 40px;
+        line-height: 46px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    /* line 156, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product .cl-product-liner {
+        font-size: 16px;
+        line-height: 20px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    /* line 163, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product-01 {
+        padding-top: 140px;
+    }
+
+    /* line 166, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product-02 {
+        padding-top: 50px;
+    }
+
+    /* line 169, ../sass/_custom-style.scss */
+
+    .cl-promo-wrapper .cl-product-03 {
+        padding-top: 50px;
+    }
+
+    @media (max-width: 880px) {
+        /* line 2, ../sass/_880.scss */
+        .cl-promo-wrapper .cl-promo-logo {
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            display: block;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        /* line 11, ../sass/_880.scss */
+        .cl-promo-wrapper .cl-promo-s1 {
+            height: 1320px;
+            background-position: center bottom;
+            background-position: center 80px;
+        }
+    }
+
+    @media (max-width: 840px) {
+        /* line 2, ../sass/_840.scss */
+        .cl-promo-wrapper .cl-product {
+            padding: 40px 20px;
+        }
+        /* line 5, ../sass/_840.scss */
+        .cl-promo-wrapper .cl-product .cl-col {
+            width: 100%;
+            float: none;
+        }
+        /* line 10, ../sass/_840.scss */
+        .cl-promo-wrapper .cl-product-01,
+        .cl-promo-wrapper .cl-product-02 {
+            padding-top: 0;
+        }
+        /* line 13, ../sass/_840.scss */
+        .cl-promo-wrapper .cl-product-03 {
+            padding-top: 20px;
+        }
+        /* line 17, ../sass/_840.scss */
+        .cl-promo-wrapper .cl-promo-s2 .cl-product-wrap {
+            background-size: cover;
+        }
+    }
+
+    @media (max-width: 767px) {
+        /* line 6, ../sass/_767.scss */
+        .cl-promo-wrapper .cl-promo-s1 {
+            height: 1320px;
+        }
+        /* line 17, ../sass/_767.scss */
+        .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod .cl-overlay-prod-img {
+            display: block;
+            text-align: center;
+            margin: 0;
+        }
+        /* line 23, ../sass/_767.scss */
+        .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod .cl-overlay-prod-text {
+            text-align: center;
+            display: block;
+            padding: 0 10px 20px;
+            margin: 0;
+        }
+        /* line 37, ../sass/_767.scss */
+        .cl-promo-wrapper .cl-promo-s2 .cl-product-wrap {
+            background: url(/pub/media/wysiwyg/microsite/clinique/2018-06/cl-s2-bg.jpg) no-repeat center top #fed2ce;
+            background-size: cover;
+        }
+        /* line 50, ../sass/_767.scss */
+        .cl-promo-wrapper .cl-product .cl-product-price {
+            font-size: 27px;
+            line-height: 30px;
+        }
+        /* line 58, ../sass/_767.scss */
+        .cl-promo-wrapper .cl-product .cl-product-liner {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        /* line 6, ../sass/_640.scss */
+        .cl-promo-wrapper .cl-promo-s1 {
+            background-size: 690px auto;
+            height: 1320px;
+            min-height: 30px;
+            background-position: center 80px;
+        }
+        /* line 13, ../sass/_640.scss */
+        .cl-promo-wrapper .cl-promo-s1 .cl-model-name {
+            top: 23%;
+        }
+    }
+
+    @media (max-width: 567px) {
+        /* line 4, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-logo img {
+            max-width: 190px;
+        }
+        /* line 8, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-model-name {
+            padding-right: 10px;
+        }
+        /* line 10, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-model-name img {
+            max-width: 100%;
+        }
+        /* line 14, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-btn-big {
+            width: 201px;
+            height: 51px;
+            padding-top: 10px;
+            font-size: 20px;
+            line-height: 20px;
+            padding-top: 16px;
+        }
+        /* line 22, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s1 {
+            background-size: 485px auto;
+            height: 900px;
+            min-height: 30px;
+            background-position: center 80px;
+        }
+        /* line 28, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s1 .cl-model-name {
+            top: 17%;
+        }
+        /* line 32, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod {
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 20px 0 0;
+        }
+        /* line 37, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod .cl-overlay-prod-text img {
+            width: 70%;
+        }
+        /* line 42, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s1 .cl-overlay-prod .cl-overlay-prod-img img {
+            width: 70%;
+        }
+        /* line 49, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s2 .cl-title {
+            height: 90px;
+            font-size: 33px;
+            line-height: 37px;
+            padding-top: 20px;
+        }
+        /* line 55, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s2 .cl-product-wrap {
+            background-position: center center;
+        }
+        /* line 59, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-product {
+            padding: 20px 10px;
+        }
+        /* line 61, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-product img {
+            max-width: 70%;
+        }
+        /* line 64, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-product .cl-product-name {
+            font-size: 21px;
+            line-height: 26px;
+        }
+        /* line 68, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-product .cl-product-name .cl-product-size {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        /* line 74, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s2-seperator {
+            height: 35px;
+        }
+        /* line 81, ../sass/_567.scss */
+        .cl-promo-wrapper .cl-promo-s3 .cl-product-title {
+            font-size: 30px;
+            line-height: 34px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        /* line 3, ../sass/_480.scss */
+        .cl-promo-wrapper .cl-promo-s1 {
+            background-size: 400px auto;
+            height: 800px;
+        }
+        /* line 7, ../sass/_480.scss */
+        .cl-promo-wrapper .cl-promo-s1 .cl-model-name {
+            top: 17%;
+            width: 70px;
+        }
+    }
+</style>>
+<div class="cl-promo-wrapper">
+
+    <div class="cl-promo-s1">
+        <div class="cl-promo-logo">
+            <img src="/pub/media/wysiwyg/microsite/clinique/2018-06/clinique-logo.png" alt="Clinique" />
+        </div>
+        <div class="cl-model-name">
+            <img src="/pub/media/wysiwyg/microsite/clinique/2018-06/cl-model-name.png" alt="Clinique Ambassador Jing Bo Ran 井柏然" />
+        </div>
+        <div class="cl-overlay-prod-wrap">
+            <div class="cl-overlay-prod">
+                <div class="cl-overlay-prod-img">
+                    <img src="/pub/media/wysiwyg/microsite/clinique/2018-06/cl-head-prod.png" alt="Clinique Moisture Surge" />
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <figure>
-                        <img style="width: 100%;" src="/pub/media/wysiwyg/microsite/clinique/cl-2.jpg" />
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <figure>
-                        <a href="/clinique-fresh-pressed-daily-booster-with-pure-vitamin-c-10-8-5ml-x-8-vials-793328.html">
-                            <img style="width: 100%;" src="/pub/media/wysiwyg/microsite/clinique/cl-3.jpg" />
-                        </a>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <figure>
-                        <a href="/clinique-moisture-surge-extended-replenishing-hydrator-duo-200ml-x2-793334.html">
-                            <img style="width: 100%;" src="/pub/media/wysiwyg/microsite/clinique/cl-4.jpg" />
-                        </a>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <figure>
-                        <a href="/brands/clinique.html">
-                            <img style="width: 100%;" src="/pub/media/wysiwyg/microsite/clinique/cl-5.jpg" />
-                        </a>
-                    </figure>
+                <div class="cl-overlay-prod-text">
+                    <img src="/pub/media/wysiwyg/microsite/clinique/2018-06/cl-head-text.png" alt="72小时 「带水力 」持久水润捧脸肌 全新倩碧水磁场保湿面霜" />
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="cl-promo-s2">
+        <div class="cl-title">
+            <span>免税专售</span>
+        </div>
+        <div class="cl-product-wrap">
+
+            <div class="cl-product">
+                <div class="cl-col">
+                    <img src="/pub/media/wysiwyg/microsite/clinique/2018-06/cl-prod1.png" alt="Clinique Fresh Pressed™ Daily Booster with Pure Vitamin C (8.5ml x8)"
+                    />
+                </div>
+                <div class="cl-col cl-product-01">
+                    <div class="v-center">
+                        <span class="cl-product-name">全新倩碧水嫩保湿润肤霜
+                            <br />（升级版）2支装
+                            <br />
+                            <span class="cl-product-size">(200ml x2)</span>
+                        </span>
+
+
+                        <div class="btn-holder">
+                            <a href="https://www.kingpower-cn.com/clinique-moisture-surge-extended-replenishing-hydrator-duo-200ml-x2-793334.html" target="_blank"
+                                class="cl-btn-big">立即购买</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cl-clear"></div>
+            </div>
+
+            <div class="cl-product">
+                <div class="cl-col">
+                    <img src="/pub/media/wysiwyg/microsite/clinique/2018-06/cl-prod2.png" alt="Clinique Moisture Surge™ 72-Hour Auto-Replenishing Hydrator Duo (200ml x2)"
+                    />
+                </div>
+                <div class="cl-col cl-product-02">
+                    <div class="v-center">
+                        <span class="cl-product-name">倩碧鲜活维C
+                            <br />修复精华液（8支装）
+                            <br />
+                            <span class="cl-product-size">(8.5ml x8)</span>
+                        </span>
+
+                        <div class="btn-holder">
+                            <a href="https://www.kingpower-cn.com/clinique-fresh-pressed-daily-booster-with-pure-vitamin-c-10-8-5ml-x-8-vials-793328.html"
+                                target="_blank" class="cl-btn-big">立即购买</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cl-clear"></div>
+            </div>
+
+            <div class="cl-promo-s2-seperator"></div>
+        </div>
+
+    </div>
+
+    <div class="cl-promo-s3">
+        <div class="cl-product-wrap">
+            <div class="cl-product">
+                <div class="cl-col">
+                    <img src="/pub/media/wysiwyg/microsite/clinique/2018-06/cl-prod3.png" alt="Clinique Moisture Surge™ 72-Hour Auto-Replenishing Hydrator Duo (200ml x2)"
+                    />
+                </div>
+                <div class="cl-col cl-product-03">
+                    <div class="v-center">
+                        <span class="cl-product-title">精美赠品</span>
+                        <span class="cl-product-name">购满倩碧产品3000THB以上
+                            <br />即享一份精美赠品*</span>
+                        <span class="cl-product-liner">*附带条件送完为止</span>
+                        <div class="btn-holder">
+                            <a href="https://www.kingpower-cn.com/brands/clinique.html" target="_blank" class="cl-btn-big">立即购买</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cl-clear"></div>
+            </div>
+        </div>
+    </div>
+
 </div>
